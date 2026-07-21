@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="JM — Lee, investiga, aprende. Contenidos claros y aplicables sobre metodología de la investigación.">
+<title>JM | Lee, investiga, aprende</title>
+<link rel="icon" href="img/Logo.png" type="image/png">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header class="site-header" id="header">
+ <div class="container nav">
+   <a class="brand" href="#inicio" aria-label="Ir al inicio">
+    <img class="brand-logo" src="img/Logo.png" alt="JM — Lee, investiga, aprende">
+    <div><strong>JM — Investiga y aprende</strong><span>Metodología de la investigación</span></div>
+   </a>
+  <nav class="nav-links" id="navLinks" aria-label="Navegación principal">
+   <a href="#inicio" data-section="inicio">Inicio</a>
+   <a href="#temas" data-section="temas">Temas</a>
+   <a href="#videos" data-section="videos">Videos</a>
+   <a href="#contacto" data-section="contacto">Contacto</a>
+  </nav>
+   <div class="nav-actions">
+    <a class="icon-btn" href="https://www.tiktok.com/@jmleeinvestigaaprende" target="_blank" rel="noopener" aria-label="TikTok" title="TikTok"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1v-3.51a6.37 6.37 0 0 0-.79-.05A6.34 6.34 0 0 0 3.15 15.2a6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.34-6.34V8.77a8.27 8.27 0 0 0 4.83 1.55V6.87a4.83 4.83 0 0 1-1.07-.18Z"/></svg></a>
+    <a class="icon-btn" href="https://www.facebook.com/profile.php?id=61585830158735" target="_blank" rel="noopener" aria-label="Facebook" title="Facebook"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.07C24 5.41 18.63 0 12 0S0 5.41 0 12.07c0 6.02 4.39 11.01 10.13 11.93v-8.44H7.08v-3.49h3.04V9.41c0-3.02 1.79-4.69 4.53-4.69 1.31 0 2.68.24 2.68.24v2.97h-1.51c-1.49 0-1.95.93-1.95 1.88v2.26h3.33l-.53 3.49h-2.8v8.44C19.61 23.08 24 18.09 24 12.07Z"/></svg></a>
+    <button class="icon-btn" id="themeToggle" type="button" aria-label="Cambiar modo claro u oscuro" title="Cambiar tema"><svg id="themeIcon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6.5 6.5 0 1 0 9 9 8.4 8.4 0 0 1-9-9Z"/></svg></button>
+    <button class="menu-btn" id="menuBtn" type="button" aria-label="Abrir menú" aria-expanded="false"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+   </div>
+ </div>
+</header>
+
+<main>
+<!-- ===== HERO ===== -->
+<section class="hero" id="inicio">
+ <div class="container hero-grid">
+  <div class="hero-copy reveal">
+   <span class="eyebrow">Metodología de la investigación, sin complicaciones</span>
+   <h1>Convierte tus dudas en <span>decisiones metodológicas claras.</span></h1>
+   <p>Contenido práctico para formular problemas, elegir enfoques, diseñar instrumentos y comunicar resultados con rigor, mediante explicaciones breves y ejemplos aplicados.</p>
+   <div class="hero-actions">
+    <a class="btn btn-primary" href="#temas">Explorar temas <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    <a class="btn btn-secondary" href="#videos">Ver contenidos destacados <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    <a class="btn btn-whatsapp" href="https://wa.me/51922444639?text=Hola%2C%20quisiera%20recibir%20informaci%C3%B3n%20sobre%20los%20contenidos%20y%20recursos%20de%20metodolog%C3%ADa%20de%20la%20investigaci%C3%B3n." target="_blank" rel="noopener" aria-label="Contactar por WhatsApp al 922 444 639"><span class="wa-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.52 3.48A11.81 11.81 0 0 0 12.06 0C5.5 0 .16 5.34.16 11.9c0 2.1.55 4.15 1.6 5.95L.06 24l6.3-1.65a11.87 11.87 0 0 0 5.69 1.45h.01c6.56 0 11.9-5.34 11.9-11.9 0-3.18-1.22-6.17-3.44-8.42ZM12.06 21.8h-.01a9.86 9.86 0 0 1-5.03-1.38l-.36-.22-3.74.98 1-3.64-.23-.38a9.87 9.87 0 0 1-1.52-5.26c0-5.46 4.44-9.9 9.9-9.9 2.64 0 5.12 1.03 6.98 2.9a9.82 9.82 0 0 1 2.9 7c0 5.46-4.44 9.9-9.89 9.9Zm5.43-7.41c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48a8.94 8.94 0 0 1-1.66-2.07c-.17-.3-.02-.46.13-.6.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.49s1.07 2.89 1.22 3.09c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.7.63.71.23 1.36.19 1.87.12.57-.08 1.76-.72 2.01-1.41.25-.7.25-1.3.17-1.42-.07-.13-.27-.2-.57-.35Z"/></svg></span><span class="wa-copy"><small>Contacto directo</small><strong>922 444 639</strong></span></a>
+   </div>
+   <div class="hero-tags"><span class="tag">Cualitativo</span><span class="tag">Cuantitativo</span><span class="tag">APA 7</span><span class="tag">Proyectos y tesis</span></div>
+   <div class="trust-strip">
+    <div class="trust-item"><strong>Explicaciones claras</strong><span>Ideas complejas en lenguaje comprensible.</span></div>
+    <div class="trust-item"><strong>Ejemplos aplicados</strong><span>Situaciones reales del trabajo académico.</span></div>
+    <div class="trust-item"><strong>Contenido organizado</strong><span>Encuentra rápido lo que necesitas.</span></div>
+   </div>
+  </div>
+  <div class="hero-visual reveal" aria-label="Identidad visual JM">
+   <div class="orb one"></div><div class="orb two"></div>
+   <div class="visual-shell">
+     <img src="img/Logo.png" alt="JM — Lee, investiga, aprende" style="width:100%;height:100%;object-fit:contain;border-radius:26px;">
+    </div>
+  </div>
+ </div>
+</section>
+
+<!-- ===== TEMAS ===== -->
+<section class="section" id="temas">
+ <div class="container">
+  <div class="section-head reveal"><div><span class="eyebrow">Explora por temas</span><h2>Encuentra la respuesta según la etapa de tu investigación.</h2></div><p>Haz clic en cualquier tema para ver su contenido completo con fundamentación académica y citas de autores.</p></div>
+  <div class="categories-grid">
+   <div class="category-card big reveal" data-tema="diseno-proyecto" role="button" tabindex="0"><div class="category-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 5h16v14H4z"/><path d="M8 9h8M8 13h5"/></svg></div><h3>Diseña tu proyecto de investigación</h3><p>Problema, preguntas, objetivos, justificación y coherencia metodológica.</p></div>
+
+   <div class="category-card small reveal" data-tema="cuantitativo" role="button" tabindex="0"><div class="category-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 19V5M4 19h16"/><path d="m7 15 4-4 3 2 5-6"/></svg></div><h3>Cuantitativo</h3><p>Variables, hipótesis, medición y análisis.</p></div>
+
+   <div class="category-card small reveal" data-tema="cualitativo" role="button" tabindex="0"><div class="category-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 4h14v16H5z"/><path d="M8 8h8M8 12h5M8 16h7"/></svg></div><h3>Cualitativo</h3><p>Experiencias, significados, categorías y diseños.</p></div>
+
+   <div class="category-card medium reveal" data-tema="instrumentos" role="button" tabindex="0"><div class="category-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 3h10v18H7z"/><path d="M10 7h4M10 11h4M10 15h4"/></svg></div><h3>Instrumentos</h3><p>Construcción, validación y aplicación de técnicas de recojo de información.</p></div>
+
+   <div class="category-card medium reveal" data-tema="apa7" role="button" tabindex="0"><div class="category-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 3h12v18H6z"/><path d="M9 8h6M9 12h6M9 16h4"/></svg></div><h3>APA 7</h3><p>Citas, referencias y escritura académica con ejemplos claros.</p></div>
+
+   <div class="category-card medium reveal" data-tema="consultas" role="button" tabindex="0"><div class="category-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 6h16v12H4z"/><path d="m4 7 8 6 8-6"/></svg></div><h3>Consultas y contacto</h3><p>Canal directo para información sobre contenidos y recursos disponibles.</p></div>
+  </div>
+ </div>
+</section>
+
+<!-- ===== MODAL ===== -->
+<div class="modal-overlay" id="modalOverlay">
+ <div class="modal">
+  <div class="modal-header">
+   <h2 id="modalTitle"></h2>
+   <button class="modal-close" id="modalClose" aria-label="Cerrar">&times;</button>
+  </div>
+  <div class="modal-body" id="modalContent"></div>
+ </div>
+</div>
+
+<!-- ===== VIDEOS ===== -->
+<section class="section" id="videos">
+ <div class="container">
+  <div class="section-head reveal"><div><span class="eyebrow">Contenido destacado</span><h2>Videos más vistos de nuestro canal de TikTok.</h2></div><a class="btn btn-link" href="https://www.tiktok.com/@jmleeinvestigaaprende" target="_blank" rel="noopener">Ver perfil en TikTok <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+
+  <!-- Videos embebidos de TikTok -->
+  <div class="video-embed-grid">
+   <div class="video-embed-card reveal">
+    <div class="embed-wrapper">
+     <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@jmleeinvestigaaprende/video/7617838949494754580" data-video-id="7617838949494754580" style="max-width:605px;min-width:325px;"><section><a target="_blank" title="@jmleeinvestigaaprende" href="https://www.tiktok.com/@jmleeinvestigaaprende?refer=embed">@jmleeinvestigaaprende</a> El Arte de Parafrasear. ¿Parafrasear es solo cambiar palabras? Error: así se hace correctamente en la redacción académica. <a title="parafraseo" target="_blank" href="https://www.tiktok.com/tag/parafraseo?refer=embed">#Parafraseo</a> <a title="redaccionacademica" target="_blank" href="https://www.tiktok.com/tag/redaccionacademica?refer=embed">#RedaccionAcademica</a> <a title="investigacion" target="_blank" href="https://www.tiktok.com/tag/investigacion?refer=embed">#Investigacion</a> <a title="tesis" target="_blank" href="https://www.tiktok.com/tag/tesis?refer=embed">#Tesis</a> <a title="metodologiadelainvestigacion" target="_blank" href="https://www.tiktok.com/tag/metodologiadelainvestigacion?refer=embed">#MetodologiaDeLaInvestigacion</a> <a title="escrituraacademica" target="_blank" href="https://www.tiktok.com/tag/escrituraacademica?refer=embed">#EscrituraAcademica</a> <a title="apa7" target="_blank" href="https://www.tiktok.com/tag/apa7?refer=embed">#APA7</a> <a title="jmleeinvestigaaprende" target="_blank" href="https://www.tiktok.com/tag/jmleeinvestigaaprende?refer=embed">#jmleeinvestigaaprende</a></section></blockquote>
+    </div>
+    <div class="embed-info"><h4>El Arte de Parafrasear</h4><span>Escritura académica • APA 7</span></div>
+   </div>
+
+   <div class="video-embed-card reveal">
+    <div class="embed-wrapper">
+     <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@jmleeinvestigaaprende/video/7590440467217665296" data-video-id="7590440467217665296" style="max-width:605px;min-width:325px;"><section><a target="_blank" title="@jmleeinvestigaaprende" href="https://www.tiktok.com/@jmleeinvestigaaprende?refer=embed">@jmleeinvestigaaprende</a> Descubre el Estudio de Caso en Educación: mirar la escuela "desde dentro". Qué es la investigación con estudio de caso en educación, sus tipos (intrínseco, instrumental y colectivo) y cómo te ayuda a comprender la convivencia, la inclusión y las prácticas de una escuela o aula específica. <a title="estudiodecaso" target="_blank" href="https://www.tiktok.com/tag/estudiodecaso?refer=embed">#EstudioDeCaso</a> <a title="investigacióncualitativa" target="_blank" href="https://www.tiktok.com/tag/investigaci%C3%B3ncualitativa?refer=embed">#InvestigaciónCualitativa</a> <a title="investigacióneducativa" target="_blank" href="https://www.tiktok.com/tag/investigaci%C3%B3neducativa?refer=embed">#InvestigaciónEducativa</a> <a title="metodologíadelainvestigación" target="_blank" href="https://www.tiktok.com/tag/metodolog%C3%ADadelainvestigaci%C3%B3n?refer=embed">#MetodologíaDeLaInvestigación</a> <a title="jmleeinvestigaaprende" target="_blank" href="https://www.tiktok.com/tag/jmleeinvestigaaprende?refer=embed">#jmleeinvestigaaprende</a></section></blockquote>
+    </div>
+    <div class="embed-info"><h4>Estudio de Caso en Educación</h4><span>Investigación cualitativa</span></div>
+   </div>
+
+   <div class="video-embed-card reveal">
+    <div class="embed-wrapper">
+     <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@jmleeinvestigaaprende/video/7592053573010132242" data-video-id="7592053573010132242" style="max-width:605px;min-width:325px;"><section><a target="_blank" title="@jmleeinvestigaaprende" href="https://www.tiktok.com/@jmleeinvestigaaprende?refer=embed">@jmleeinvestigaaprende</a> Del dato a la comprensión crítica: cómo analizar tu Investigación-Acción. Categorización, estructuración, triangulación, contrastación, reflexión crítica y teorización para transformar datos en conocimiento pedagógico útil y compartible. <a title="investigaciónacción" target="_blank" href="https://www.tiktok.com/tag/investigaci%C3%B3nacci%C3%B3n?refer=embed">#InvestigaciónAcción</a> <a title="investigacióneducativa" target="_blank" href="https://www.tiktok.com/tag/investigaci%C3%B3neducativa?refer=embed">#InvestigaciónEducativa</a> <a title="jmleeinvestigaaprende" target="_blank" href="https://www.tiktok.com/tag/jmleeinvestigaaprende?refer=embed">#jmleeinvestigaaprende</a></section></blockquote>
+    </div>
+    <div class="embed-info"><h4>Investigación-Acción</h4><span>Del dato a la comprensión crítica</span></div>
+   </div>
+
+   <div class="video-embed-card reveal">
+    <div class="embed-wrapper">
+     <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@jmleeinvestigaaprende/video/7602457583051443476" data-video-id="7602457583051443476" style="max-width:605px;min-width:325px;"><section><a target="_blank" title="@jmleeinvestigaaprende" href="https://www.tiktok.com/@jmleeinvestigaaprende?refer=embed">@jmleeinvestigaaprende</a> Objetivos de Investigación. Cómo plantear de manera adecuada los objetivos de un proyecto de investigación en relación con los enfoques cualitativo y cuantitativo. <a title="investigación" target="_blank" href="https://www.tiktok.com/tag/investigaci%C3%B3n?refer=embed">#Investigación</a> <a title="metodología" target="_blank" href="https://www.tiktok.com/tag/metodolog%C3%ADa?refer=embed">#Metodología</a> <a title="jmleeinvestigaaprende" target="_blank" href="https://www.tiktok.com/tag/jmleeinvestigaaprende?refer=embed">#jmleeinvestigaaprende</a></section></blockquote>
+    </div>
+    <div class="embed-info"><h4>Objetivos de Investigación</h4><span>Enfoque cualitativo y cuantitativo</span></div>
+   </div>
+  </div>
+
+ </div>
+</section>
+
+<!-- ===== CONTACTO ===== -->
+<section class="contact-section" id="contacto">
+ <div class="container">
+  <div class="contact-card reveal">
+   <div><span class="eyebrow">Contacto directo</span><h2>¿Tienes una consulta sobre metodología de la investigación?</h2><p>Escríbeme para recibir información sobre contenidos, recursos educativos y próximas publicaciones.</p></div>
+   <div class="contact-actions"><a class="btn btn-whatsapp" href="https://wa.me/51922444639?text=Hola%2C%20quisiera%20recibir%20informaci%C3%B3n%20sobre%20los%20contenidos%20y%20recursos%20de%20metodolog%C3%ADa%20de%20la%20investigaci%C3%B3n." target="_blank" rel="noopener" aria-label="Escribir por WhatsApp al 922 444 639"><span class="wa-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.52 3.48A11.81 11.81 0 0 0 12.06 0C5.5 0 .16 5.34.16 11.9c0 2.1.55 4.15 1.6 5.95L.06 24l6.3-1.65a11.87 11.87 0 0 0 5.69 1.45h.01c6.56 0 11.9-5.34 11.9-11.9 0-3.18-1.22-6.17-3.44-8.42ZM12.06 21.8h-.01a9.86 9.86 0 0 1-5.03-1.38l-.36-.22-3.74.98 1-3.64-.23-.38a9.87 9.87 0 0 1-1.52-5.26c0-5.46 4.44-9.9 9.9-9.9 2.64 0 5.12 1.03 6.98 2.9a9.82 9.82 0 0 1 2.9 7c0 5.46-4.44 9.9-9.89 9.9Zm5.43-7.41c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48a8.94 8.94 0 0 1-1.66-2.07c-.17-.3-.02-.46.13-.6.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.49s1.07 2.89 1.22 3.09c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.7.63.71.23 1.36.19 1.87.12.57-.08 1.76-.72 2.01-1.41.25-.7.25-1.3.17-1.42-.07-.13-.27-.2-.57-.35Z"/></svg></span><span class="wa-copy"><small>Responderé por WhatsApp</small><strong>Escribir al 922 444 639</strong></span></a><span class="contact-number">Atención mediante mensaje directo</span></div>
+  </div>
+ </div>
+</section>
+
+<!-- ===== CTA ===== -->
+<section class="cta">
+ <div class="container">
+  <div class="cta-card reveal">
+   <div class="cta-bg" style="background:linear-gradient(135deg,#0d1020,#1a1040);"></div>
+   <div class="cta-copy"><span class="eyebrow">Comunidad de aprendizaje</span><h2>Lee, investiga y aprende con propósito.</h2><p>Usa cada contenido breve como punto de partida para comprender, aplicar y tomar mejores decisiones en tu investigación.</p><a class="btn btn-primary" href="https://www.tiktok.com/@jmleeinvestigaaprende" target="_blank" rel="noopener">Seguir en TikTok <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M8 7h9v9"/></svg></a></div>
+  </div>
+ </div>
+</section>
+</main>
+
+<footer>
+ <div class="container footer-row">
+   <a class="brand" href="#inicio">
+    <img class="brand-logo" src="img/Logo.png" alt="JM — Lee, investiga, aprende" style="width:42px;height:42px;">
+    <div><strong style="font-size:.85rem;">JM — Investiga y aprende</strong><span style="font-size:.7rem;">Metodología de la investigación</span></div>
+   </a>
+  <div class="footer-links">
+   <a href="#inicio">Inicio</a>
+   <a href="#temas">Temas</a>
+   <a href="#videos">Videos</a>
+   <a href="#contacto">Contacto</a>
+   <a href="https://www.tiktok.com/@jmleeinvestigaaprende" target="_blank" rel="noopener">TikTok</a>
+  </div>
+  <span style="color:var(--muted);font-size:.8rem;">&copy; 2026 JM — Lee, investiga, aprende</span>
+ </div>
+</footer>
+
+<!-- WhatsApp Flotante -->
+<a class="whatsapp-float" href="https://wa.me/51922444639?text=Hola%2C%20quisiera%20recibir%20informaci%C3%B3n%20sobre%20los%20contenidos%20y%20recursos%20de%20metodolog%C3%ADa%20de%20la%20investigaci%C3%B3n." target="_blank" rel="noopener" aria-label="Contactar por WhatsApp al 922 444 639"><span class="wa-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.52 3.48A11.81 11.81 0 0 0 12.06 0C5.5 0 .16 5.34.16 11.9c0 2.1.55 4.15 1.6 5.95L.06 24l6.3-1.65a11.87 11.87 0 0 0 5.69 1.45h.01c6.56 0 11.9-5.34 11.9-11.9 0-3.18-1.22-6.17-3.44-8.42ZM12.06 21.8h-.01a9.86 9.86 0 0 1-5.03-1.38l-.36-.22-3.74.98 1-3.64-.23-.38a9.87 9.87 0 0 1-1.52-5.26c0-5.46 4.44-9.9 9.9-9.9 2.64 0 5.12 1.03 6.98 2.9a9.82 9.82 0 0 1 2.9 7c0 5.46-4.44 9.9-9.89 9.9Zm5.43-7.41c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48a8.94 8.94 0 0 1-1.66-2.07c-.17-.3-.02-.46.13-.6.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.49s1.07 2.89 1.22 3.09c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.7.63.71.23 1.36.19 1.87.12.57-.08 1.76-.72 2.01-1.41.25-.7.25-1.3.17-1.42-.07-.13-.27-.2-.57-.35Z"/></svg></span><span>WhatsApp</span></a>
+
+<script src="js/main.js"></script>
+<script async src="https://www.tiktok.com/embed.js"></script>
+</body>
+</html>
