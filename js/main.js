@@ -1,3 +1,44 @@
+// ===== TikTok lazy-load =====
+let tiktokScriptLoaded = false;
+function loadTiktokScript(cb) {
+  if (tiktokScriptLoaded) { cb(); return; }
+  var s = document.createElement('script');
+  s.src = 'https://www.tiktok.com/embed.js';
+  s.async = true;
+  s.onload = function() { tiktokScriptLoaded = true; cb(); };
+  document.body.appendChild(s);
+}
+
+document.querySelectorAll('.tiktok-lazy-btn').forEach(function(btn) {
+  btn.addEventListener('click', function() {
+    var wrapper = btn.closest('.embed-wrapper');
+    var videoId = wrapper.dataset.tiktokId;
+    var user = wrapper.dataset.tiktokUser;
+    if (!videoId || !user) return;
+    loadTiktokScript(function() {
+      var bq = document.createElement('blockquote');
+      bq.className = 'tiktok-embed';
+      bq.cite = 'https://www.tiktok.com/@' + user + '/video/' + videoId;
+      bq.dataset.videoId = videoId;
+      bq.style.cssText = 'max-width:605px;min-width:325px';
+      var sec = document.createElement('section');
+      var a = document.createElement('a');
+      a.target = '_blank';
+      a.href = 'https://www.tiktok.com/@' + user + '?refer=embed';
+      a.textContent = '@' + user;
+      sec.appendChild(a);
+      sec.appendChild(document.createTextNode(' Video de TikTok'));
+      bq.appendChild(sec);
+      wrapper.innerHTML = '';
+      wrapper.appendChild(bq);
+      wrapper.classList.add('loaded');
+      if (typeof tiktok !== 'undefined' && tiktok.embed) {
+        tiktok.embed();
+      }
+    });
+  });
+});
+
 // ===== Tema oscuro/claro =====
 const root = document.documentElement;
 const toggle = document.getElementById('themeToggle');
@@ -34,27 +75,45 @@ const header = document.getElementById('header');
 addEventListener('scroll', () => header.classList.toggle('scrolled', scrollY > 8), { passive: true });
 
 // ===== Reveal on scroll =====
-const revealObserver = new IntersectionObserver(entries => entries.forEach(e => {
-  if (e.isIntersecting) { e.target.classList.add('visible'); revealObserver.unobserve(e.target); }
-}), { threshold: .12 });
-document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+if ('IntersectionObserver' in window) {
+  var revealObserver = new IntersectionObserver(function(entries) {
+    for (var i = 0; i < entries.length; i++) {
+      if (entries[i].isIntersecting) {
+        entries[i].target.classList.add('visible');
+        revealObserver.unobserve(entries[i].target);
+      }
+    }
+  }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+  var reveals = document.querySelectorAll('.reveal');
+  for (var i = 0; i < reveals.length; i++) revealObserver.observe(reveals[i]);
+} else {
+  var allReveals = document.querySelectorAll('.reveal');
+  for (var j = 0; j < allReveals.length; j++) allReveals[j].classList.add('visible');
+}
 
 // ===== Active nav link =====
-const sectionLinks = [...document.querySelectorAll('[data-section]')];
-const sections = sectionLinks.map(a => document.getElementById(a.dataset.section));
-const activeObserver = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      sectionLinks.forEach(a => {
-        const isActive = a.dataset.section === entry.target.id;
-        a.classList.toggle('active', isActive);
-        if (isActive) a.setAttribute('aria-current', 'page');
-        else a.removeAttribute('aria-current');
-      });
+if ('IntersectionObserver' in window) {
+  var sectionLinks = document.querySelectorAll('[data-section]');
+  var sectionsArr = [];
+  for (var i = 0; i < sectionLinks.length; i++) {
+    sectionsArr.push(document.getElementById(sectionLinks[i].dataset.section));
+  }
+  var activeObserver = new IntersectionObserver(function(entries) {
+    for (var j = 0; j < entries.length; j++) {
+      if (entries[j].isIntersecting) {
+        for (var k = 0; k < sectionLinks.length; k++) {
+          var isActive = sectionLinks[k].dataset.section === entries[j].target.id;
+          sectionLinks[k].classList.toggle('active', isActive);
+          if (isActive) sectionLinks[k].setAttribute('aria-current', 'page');
+          else sectionLinks[k].removeAttribute('aria-current');
+        }
+      }
     }
-  });
-}, { rootMargin: '-35% 0px -55% 0px', threshold: 0 });
-sections.forEach(s => s && activeObserver.observe(s));
+  }, { rootMargin: '-35% 0px -55% 0px', threshold: 0 });
+  for (var s = 0; s < sectionsArr.length; s++) {
+    if (sectionsArr[s]) activeObserver.observe(sectionsArr[s]);
+  }
+}
 
 // ===== Contenido de los Temas =====
 const temasContenido = {
