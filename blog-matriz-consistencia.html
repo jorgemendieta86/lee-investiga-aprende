@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="La Matriz de Consistencia: qué es, cómo elaborarla y por qué es esencial para la coherencia de tu proyecto de investigación.">
+<title>La Matriz de Consistencia | Blog JM</title>
+<link rel="icon" href="img/Logo.png" type="image/png">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header class="site-header" id="header">
+ <div class="container nav">
+   <a class="brand" href="index.html#inicio" aria-label="Ir al inicio">
+    <img class="brand-logo" src="img/Logo.png" alt="JM — Lee, investiga, aprende">
+    <div><strong>JM — Investiga y aprende</strong><span>Metodología de la investigación</span></div>
+   </a>
+  <nav class="nav-links" id="navLinks" aria-label="Navegación principal">
+   <a href="index.html#inicio">Inicio</a>
+   <a href="index.html#temas">Temas</a>
+   <a href="index.html#videos">Videos</a>
+   <a href="blog.html" class="active">Blog</a>
+   <a href="index.html#contacto">Contacto</a>
+  </nav>
+   <div class="nav-actions">
+    <a class="icon-btn" href="https://www.tiktok.com/@jmleeinvestigaaprende" target="_blank" rel="noopener" aria-label="TikTok" title="TikTok"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1v-3.51a6.37 6.37 0 0 0-.79-.05A6.34 6.34 0 0 0 3.15 15.2a6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.34-6.34V8.77a8.27 8.27 0 0 0 4.83 1.55V6.87a4.83 4.83 0 0 1-1.07-.18Z"/></svg></a>
+    <a class="icon-btn" href="https://www.facebook.com/profile.php?id=61585830158735" target="_blank" rel="noopener" aria-label="Facebook" title="Facebook"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.07C24 5.41 18.63 0 12 0S0 5.41 0 12.07c0 6.02 4.39 11.01 10.13 11.93v-8.44H7.08v-3.49h3.04V9.41c0-3.02 1.79-4.69 4.53-4.69 1.31 0 2.68.24 2.68.24v2.97h-1.51c-1.49 0-1.95.93-1.95 1.88v2.26h3.33l-.53 3.49h-2.8v8.44C19.61 23.08 24 18.09 24 12.07Z"/></svg></a>
+    <button class="icon-btn" id="themeToggle" type="button" aria-label="Cambiar modo claro u oscuro" title="Cambiar tema"><svg id="themeIcon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6.5 6.5 0 1 0 9 9 8.4 8.4 0 0 1-9-9Z"/></svg></button>
+    <button class="menu-btn" id="menuBtn" type="button" aria-label="Abrir menú" aria-expanded="false"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+   </div>
+ </div>
+</header>
+
+<main>
+<!-- ===== HERO DEL ARTÍCULO ===== -->
+<section class="article-hero">
+ <div class="container">
+  <div class="article-hero-inner reveal">
+   <a href="blog.html" class="article-back"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg> Volver al blog</a>
+   <span class="eyebrow">Herramienta metodológica</span>
+   <h1>La Matriz de Consistencia</h1>
+   <p class="article-subtitle">Cómo verificar la coherencia lógica de tu proyecto de investigación con una sola herramienta visual.</p>
+   <div class="article-meta">
+    <span class="article-date"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg> 24 de julio, 2026</span>
+    <span class="article-read"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> 12 min de lectura</span>
+   </div>
+  </div>
+ </div>
+</section>
+
+<!-- ===== BANNER DEL ARTÍCULO ===== -->
+<section class="article-banner">
+ <div class="container">
+  <div class="article-banner-visual reveal">
+   <svg viewBox="0 0 960 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+     <linearGradient id="abg" x1="0" y1="0" x2="960" y2="300">
+      <stop stop-color="#0a0e1a"/>
+      <stop offset=".3" stop-color="#141836"/>
+      <stop offset=".6" stop-color="#1a1048"/>
+      <stop offset="1" stop-color="#0c1828"/>
+     </linearGradient>
+     <linearGradient id="aglow" x1="140" y1="150" x2="820" y2="150">
+      <stop stop-color="#38b9c9"/>
+      <stop offset=".5" stop-color="#756fd0"/>
+      <stop offset="1" stop-color="#38b9c9"/>
+     </linearGradient>
+     <radialGradient id="ahalo" cx="50%" cy="50%" r="50%">
+      <stop stop-color="#756fd0" stop-opacity=".15"/>
+      <stop offset="1" stop-color="#756fd0" stop-opacity="0"/>
+     </radialGradient>
+    </defs>
+    <rect width="960" height="300" fill="url(#abg)"/>
+    <ellipse cx="480" cy="150" rx="400" ry="130" fill="url(#ahalo)"/>
+    <!-- Líneas de conexión principales -->
+    <line x1="480" y1="70" x2="160" y2="145" stroke="url(#aglow)" stroke-width="2.2" opacity=".55"/>
+    <line x1="480" y1="70" x2="800" y2="145" stroke="url(#aglow)" stroke-width="2.2" opacity=".55"/>
+    <line x1="160" y1="145" x2="280" y2="248" stroke="url(#aglow)" stroke-width="2.2" opacity=".45"/>
+    <line x1="800" y1="145" x2="680" y2="248" stroke="url(#aglow)" stroke-width="2.2" opacity=".45"/>
+    <line x1="280" y1="248" x2="680" y2="248" stroke="url(#aglow)" stroke-width="2.2" opacity=".45"/>
+    <!-- Líneas punteadas internas -->
+    <line x1="160" y1="145" x2="800" y2="145" stroke="#756fd0" stroke-width="1.8" opacity=".25" stroke-dasharray="10 6"/>
+    <line x1="280" y1="248" x2="480" y2="70" stroke="#38b9c9" stroke-width="1.2" opacity=".15" stroke-dasharray="6 6"/>
+    <line x1="680" y1="248" x2="480" y2="70" stroke="#38b9c9" stroke-width="1.2" opacity=".15" stroke-dasharray="6 6"/>
+    <!-- Nodo central (hub) -->
+    <circle cx="480" cy="150" r="30" fill="#0d1020" stroke="#756fd0" stroke-width="2.5"/>
+    <circle cx="480" cy="150" r="16" fill="url(#aglow)" opacity=".65"/>
+    <circle cx="480" cy="150" r="36" fill="none" stroke="#38b9c9" stroke-width="1.2" opacity=".25"/>
+    <text x="480" y="155" text-anchor="middle" fill="#fff" font-size="9" font-weight="bold" font-family="Inter,sans-serif" opacity=".8">MC</text>
+    <!-- Nodo 1: Problema (arriba-centro) -->
+    <rect x="410" y="42" width="140" height="46" rx="10" fill="#0d1020" stroke="#38b9c9" stroke-width="2.2"/>
+    <text x="480" y="70" text-anchor="middle" fill="#38b9c9" font-size="11" font-weight="bold" font-family="Inter,sans-serif">PROBLEMA</text>
+    <!-- Nodo 2: Objetivos (izquierda) -->
+    <rect x="78" y="122" width="164" height="46" rx="10" fill="#0d1020" stroke="#38b9c9" stroke-width="2.2"/>
+    <text x="160" y="150" text-anchor="middle" fill="#38b9c9" font-size="11" font-weight="bold" font-family="Inter,sans-serif">OBJETIVOS</text>
+    <!-- Nodo 3: Hipótesis (derecha) -->
+    <rect x="718" y="122" width="164" height="46" rx="10" fill="#0d1020" stroke="#756fd0" stroke-width="2.2"/>
+    <text x="800" y="150" text-anchor="middle" fill="#958be4" font-size="11" font-weight="bold" font-family="Inter,sans-serif">HIPÓTESIS</text>
+    <!-- Nodo 4: Variables (izq-abajo) -->
+    <rect x="196" y="225" width="168" height="46" rx="10" fill="#0d1020" stroke="#756fd0" stroke-width="2.2"/>
+    <text x="280" y="253" text-anchor="middle" fill="#958be4" font-size="11" font-weight="bold" font-family="Inter,sans-serif">VARIABLES</text>
+    <!-- Nodo 5: Metodología (der-abajo) -->
+    <rect x="596" y="225" width="168" height="46" rx="10" fill="#0d1020" stroke="#38b9c9" stroke-width="2.2"/>
+    <text x="680" y="253" text-anchor="middle" fill="#38b9c9" font-size="11" font-weight="bold" font-family="Inter,sans-serif">METODOLOGÍA</text>
+    <!-- Décor: puntos flotantes -->
+    <circle cx="30" cy="35" r="5" fill="#38b9c9" opacity=".45"/>
+    <circle cx="932" cy="50" r="6" fill="#756fd0" opacity=".35"/>
+    <circle cx="42" cy="270" r="4" fill="#756fd0" opacity=".3"/>
+    <circle cx="918" cy="275" r="4.5" fill="#38b9c9" opacity=".3"/>
+    <circle cx="340" cy="22" r="3" fill="#38b9c9" opacity=".35"/>
+    <circle cx="630" cy="20" r="2.5" fill="#756fd0" opacity=".3"/>
+    <circle cx="100" cy="60" r="2" fill="#756fd0" opacity=".25"/>
+    <circle cx="870" cy="80" r="2.5" fill="#38b9c9" opacity=".25"/>
+    <!-- Décor: diamantes -->
+    <rect x="55" y="90" width="7" height="7" rx="1" fill="#38b9c9" opacity=".3" transform="rotate(45 58.5 93.5)"/>
+    <rect x="895" y="200" width="6" height="6" rx="1" fill="#756fd0" opacity=".3" transform="rotate(45 898 203)"/>
+    <rect x="140" y="260" width="5" height="5" rx="1" fill="#38b9c9" opacity=".25" transform="rotate(45 142.5 262.5)"/>
+   </svg>
+  </div>
+ </div>
+</section>
+
+<!-- ===== CONTENIDO DEL ARTÍCULO ===== -->
+<section class="article-content">
+ <div class="container">
+  <article class="article-body">
+
+   <!-- ============================================================ -->
+   <!-- SECCIÓN 1: ¿Qué es la Matriz de Consistencia? -->
+   <!-- ============================================================ -->
+   <h2>¿Qué es la Matriz de Consistencia?</h2>
+   <p>La Matriz de Consistencia (MC) es un instrumento metodológico que presenta de forma visual y organizada los elementos fundamentales del diseño de investigación. Su nombre revela su función principal: <strong>verificar la consistencia</strong>, es decir, la coherencia lógica entre los distintos componentes de un estudio (Hernández-Sampieri y Fernández-Collado, 2018).</p>
+
+   <p>Como señala Rojas (2010), la matriz permite al investigador <em>"visualizar en un solo cuadro la relación estrecha e indisoluble que existe entre las partes de la investigación, las cuales deben estar unidas por una lógica interna que dé congruencia al estudio"</em>. De esta manera, la MC se convierte en una herramienta de verificación y planeación indispensable.</p>
+
+   <div class="article-highlight">
+    <div class="highlight-icon">
+     <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#38b9c9" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
+    </div>
+    <div>
+     <p>Según Giesecke (2020), la matriz de consistencia se define como <em>"una tabla en la que se detallan las relaciones entre los objetivos, las preguntas de investigación, las hipótesis, las variables y los métodos de recolección de datos"</em>. Esta definición subraya el carácter relacional y estructurado de la herramienta.</p>
+    </div>
+   </div>
+
+   <p>También denominada <strong>matriz de congruencia</strong> (Vera y Lugo, 2016), esta herramienta permite consolidar los elementos clave de todo el proceso investigativo y evaluar el grado de coherencia y conexión lógica entre el título, el problema, la hipótesis, los objetivos, las variables, el diseño de investigación, los instrumentos, así como la población y la muestra del estudio (Kerlinger, 2002).</p>
+
+   <!-- SVG Ilustración: Definición (Instrumento + Propósito) -->
+   <div class="article-image">
+    <svg viewBox="0 0 700 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+     <rect width="700" height="220" rx="16" fill="#f6f8fc" stroke="#e0e5ed" stroke-width="1.5"/>
+     <text x="350" y="32" text-anchor="middle" fill="#12172a" font-size="14" font-weight="bold" font-family="Inter, sans-serif">¿Qué es la Matriz de Consistencia?</text>
+     <!-- Box: Instrumento -->
+     <rect x="40" y="55" width="280" height="110" rx="12" fill="#e8f8fa" stroke="#38b9c9" stroke-width="1.5"/>
+     <rect x="40" y="55" width="280" height="36" rx="12" fill="#38b9c9"/>
+     <rect x="40" y="79" width="280" height="12" fill="#38b9c9"/>
+     <text x="180" y="79" text-anchor="middle" fill="#fff" font-size="13" font-weight="bold" font-family="Inter, sans-serif">INSTRUMENTO</text>
+     <text x="180" y="108" text-anchor="middle" fill="#12172a" font-size="11" font-family="Inter, sans-serif">Tabla que presenta los elementos</text>
+     <text x="180" y="126" text-anchor="middle" fill="#12172a" font-size="11" font-family="Inter, sans-serif">fundamentales del diseño de</text>
+     <text x="180" y="144" text-anchor="middle" fill="#12172a" font-size="11" font-family="Inter, sans-serif">investigación (Giesecke, 2020)</text>
+     <!-- Arrow -->
+     <line x1="335" y1="110" x2="375" y2="110" stroke="#756fd0" stroke-width="2.5"/>
+     <polygon points="375,103 390,110 375,117" fill="#756fd0"/>
+     <!-- Box: Propósito -->
+     <rect x="390" y="55" width="280" height="110" rx="12" fill="#f0ecfa" stroke="#756fd0" stroke-width="1.5"/>
+     <rect x="390" y="55" width="280" height="36" rx="12" fill="#756fd0"/>
+     <rect x="390" y="79" width="280" height="12" fill="#756fd0"/>
+     <text x="530" y="79" text-anchor="middle" fill="#fff" font-size="13" font-weight="bold" font-family="Inter, sans-serif">PROPÓSITO</text>
+     <text x="530" y="108" text-anchor="middle" fill="#12172a" font-size="11" font-family="Inter, sans-serif">Verificar la coherencia lógica</text>
+     <text x="530" y="126" text-anchor="middle" fill="#12172a" font-size="11" font-family="Inter, sans-serif">entre problemas, objetivos,</text>
+     <text x="530" y="144" text-anchor="middle" fill="#12172a" font-size="11" font-family="Inter, sans-serif">hipótesis, variables y método</text>
+     <!-- Caption -->
+     <text x="350" y="200" text-anchor="middle" fill="#626b7f" font-size="10.5" font-family="Inter, sans-serif">La MC es un instrumento con un propósito claro: garantizar coherencia interna en la investigación.</text>
+    </svg>
+    <span class="img-caption">Figura 1. Concepto de la Matriz de Consistencia: instrumento y propósito (Giesecke, 2020; Kerlinger, 2002).</span>
+   </div>
+
+   <!-- SVG Divisor -->
+   <div class="article-image">
+    <svg viewBox="0 0 700 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+     <line x1="0" y1="10" x2="320" y2="10" stroke="#e0e5ed" stroke-width="1.2"/>
+     <circle cx="350" cy="10" r="5" fill="#38b9c9"/>
+     <line x1="380" y1="10" x2="700" y2="10" stroke="#e0e5ed" stroke-width="1.2"/>
+    </svg>
+   </div>
+
+   <!-- ============================================================ -->
+   <!-- SECCIÓN 2: Elementos que la conforman -->
+   <!-- ============================================================ -->
+   <h2>Elementos que la conforman</h2>
+   <p>La estructura más completa de la Matriz de Consistencia incluye las siguientes columnas, cada una representando un componente esencial del proceso investigativo. Según Arias (2016), estos cinco elementos forman la columna vertebral de cualquier diseño de investigación y deben estar articulados por una lógica interna que garantice la validez del estudio. Carrasco (2018) complementa señalando que la ausencia de cualquiera de estos componentes genera inconsistencias metodológicas que pueden comprometer los resultados.</p>
+
+   <!-- SVG: 5 Elementos en fila con flechas -->
+   <div class="article-image">
+    <svg viewBox="0 0 700 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+     <rect width="700" height="180" rx="16" fill="#f6f8fc" stroke="#e0e5ed" stroke-width="1.5"/>
+     <!-- 1. Problema -->
+     <circle cx="70" cy="70" r="18" fill="#38b9c9"/>
+     <text x="70" y="75" text-anchor="middle" fill="#fff" font-size="14" font-weight="bold" font-family="Inter, sans-serif">1</text>
+     <text x="70" y="105" text-anchor="middle" fill="#12172a" font-size="10.5" font-weight="bold" font-family="Inter, sans-serif">Problema</text>
+     <text x="70" y="120" text-anchor="middle" fill="#626b7f" font-size="8.5" font-family="Inter, sans-serif">Pregunta central</text>
+     <text x="70" y="132" text-anchor="middle" fill="#626b7f" font-size="8.5" font-family="Inter, sans-serif">del estudio</text>
+     <line x1="95" y1="70" x2="125" y2="70" stroke="#756fd0" stroke-width="2"/>
+     <polygon points="125,64 137,70 125,76" fill="#756fd0"/>
+     <!-- 2. Objetivos -->
+     <circle cx="180" cy="70" r="18" fill="#756fd0"/>
+     <text x="180" y="75" text-anchor="middle" fill="#fff" font-size="14" font-weight="bold" font-family="Inter, sans-serif">2</text>
+     <text x="180" y="105" text-anchor="middle" fill="#12172a" font-size="10.5" font-weight="bold" font-family="Inter, sans-serif">Objetivos</text>
+     <text x="180" y="120" text-anchor="middle" fill="#626b7f" font-size="8.5" font-family="Inter, sans-serif">Intención del</text>
+     <text x="180" y="132" text-anchor="middle" fill="#626b7f" font-size="8.5" font-family="Inter, sans-serif">investigador</text>
+     <line x1="205" y1="70" x2="235" y2="70" stroke="#756fd0" stroke-width="2"/>
+     <polygon points="235,64 247,70 235,76" fill="#756fd0"/>
+     <!-- 3. Hipótesis -->
+     <circle cx="290" cy="70" r="18" fill="#38b9c9"/>
+     <text x="290" y="75" text-anchor="middle" fill="#fff" font-size="14" font-weight="bold" font-family="Inter, sans-serif">3</text>
+     <text x="290" y="105" text-anchor="middle" fill="#12172a" font-size="10.5" font-weight="bold" font-family="Inter, sans-serif">Hipótesis</text>
+     <text x="290" y="120" text-anchor="middle" fill="#626b7f" font-size="8.5" font-family="Inter, sans-serif">Supuestos a</text>
+     <text x="290" y="132" text-anchor="middle" fill="#626b7f" font-size="8.5" font-family="Inter, sans-serif">comprobar</text>
+     <line x1="315" y1="70" x2="345" y2="70" stroke="#756fd0" stroke-width="2"/>
+     <polygon points="345,64 357,70 345,76" fill="#756fd0"/>
+     <!-- 4. Variables -->
+     <circle cx="400" cy="70" r="18" fill="#756fd0"/>
+     <text x="400" y="75" text-anchor="middle" fill="#fff" font-size="14" font-weight="bold" font-family="Inter, sans-serif">4</text>
+     <text x="400" y="105" text-anchor="middle" fill="#12172a" font-size="10.5" font-weight="bold" font-family="Inter, sans-serif">Variables</text>
+     <text x="400" y="120" text-anchor="middle" fill="#626b7f" font-size="8.5" font-family="Inter, sans-serif">VI, VD, dimen-</text>
+     <text x="400" y="132" text-anchor="middle" fill="#626b7f" font-size="8.5" font-family="Inter, sans-serif">siones e indicadores</text>
+     <line x1="425" y1="70" x2="455" y2="70" stroke="#756fd0" stroke-width="2"/>
+     <polygon points="455,64 467,70 455,76" fill="#756fd0"/>
+     <!-- 5. Método -->
+     <circle cx="510" cy="70" r="18" fill="#38b9c9"/>
+     <text x="510" y="75" text-anchor="middle" fill="#fff" font-size="14" font-weight="bold" font-family="Inter, sans-serif">5</text>
+     <text x="510" y="105" text-anchor="middle" fill="#12172a" font-size="10.5" font-weight="bold" font-family="Inter, sans-serif">Método</text>
+     <text x="510" y="120" text-anchor="middle" fill="#626b7f" font-size="8.5" font-family="Inter, sans-serif">Diseño,</text>
+     <text x="510" y="132" text-anchor="middle" fill="#626b7f" font-size="8.5" font-family="Inter, sans-serif">instrumentos</text>
+     <!-- Caption bottom -->
+     <text x="350" y="166" text-anchor="middle" fill="#626b7f" font-size="9.5" font-family="Inter, sans-serif">Cada elemento se deriva del anterior en una cadena lógica (Arias, 2016; Carrasco, 2018)</text>
+    </svg>
+    <span class="img-caption">Figura 2. Los cinco elementos de la Matriz de Consistencia y su secuencia lógica (Arias, 2016; Carrasco, 2018).</span>
+   </div>
+
+   <!-- ---------- Problema ---------- -->
+   <h3>1. Problema de investigación</h3>
+   <p>El problema es el punto de partida de toda investigación. Kerlinger (2002) lo define como <em>"una pregunta que expresa relaciones entre variables y que puede ser respondida mediante un procedimiento de investigación"</em>. Arias (2016) señala que un buen planteamiento del problema debe expresarse de forma interrogativa y concretizar una situación que requiere explicación.</p>
+   <p>En la MC, el problema general se desglosa en problemas específicos, cada uno de los cuales explorará un aspecto particular de la relación entre variables (Hernández-Sampieri y Fernández-Collado, 2018).</p>
+
+   <!-- ---------- Objetivos ---------- -->
+   <h3>2. Objetivos de investigación</h3>
+   <p>Los objetivos son la versión afirmativa del problema: representan la intención del investigador. Hernández-Sampieri y Fernández-Collado (2018) enfatizan que <em>"cada objetivo específico debe derivarse directamente de su problema correspondiente, utilizando verbos en infinitivo que reflejen la acción investigadora"</em>. Rojas (2010) recomienda que los objetivos sean medibles y estén formulados con claridad para orientar el proceso de recolección y análisis de datos.</p>
+
+   <!-- ---------- Hipótesis ---------- -->
+   <h3>3. Hipótesis</h3>
+   <p>Bunge (1972) define la hipótesis como <em>"una suposición anticipada de la respuesta a una pregunta, susceptible de ser verificada por los métodos científicos"</em>. Creswell (2018) agrega que en estudios correlacionales y experimentales, la hipótesis debe incluir ambas variables y el tipo de relación esperada entre ellas. La MC exige coherencia entre la hipótesis, el problema y los objetivos: si uno cambia, los otros deben actualizarse.</p>
+
+   <!-- ---------- Variables ---------- -->
+   <h3>4. Variables</h3>
+   <p>Tamayo y Tamayo (2018) define variable como <em>"cualidad, propiedad o característica de un objeto, susceptible de adquirir diferentes valores"</em>. En la MC se identifican al menos la variable independiente (causa) y la dependiente (efecto). Cada variable se desglosa en dimensiones e indicadores medibles que permiten su operacionalización (Arias, 2016).</p>
+
+   <!-- ---------- Metodología ---------- -->
+   <h3>5. Metodología</h3>
+   <p>Sampieri, Collado y Lucio (2014) definen la metodología como <em>"el procedimiento para obtener conocimiento y los fundamentos o principios en los que se basa ese procedimiento"</em>. En la columna de metodología de la MC se especifican: tipo de investigación, diseño, método, población, muestra, técnicas e instrumentos de recolección de datos, y técnica de análisis (Carrasco, 2018).</p>
+
+   <!-- SVG Divisor -->
+   <div class="article-image">
+    <svg viewBox="0 0 700 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+     <line x1="0" y1="10" x2="320" y2="10" stroke="#e0e5ed" stroke-width="1.2"/>
+     <circle cx="350" cy="10" r="5" fill="#756fd0"/>
+     <line x1="380" y1="10" x2="700" y2="10" stroke="#e0e5ed" stroke-width="1.2"/>
+    </svg>
+   </div>
+
+   <!-- ============================================================ -->
+   <!-- SECCIÓN 3: ¿Para qué sirve? -->
+   <!-- ============================================================ -->
+   <h2>¿Para qué sirve?</h2>
+   <p>La Matriz de Consistencia cumple múltiples funciones fundamentales en el proceso investigativo. Vera y Lugo (2016) la consideran una herramienta que <em>"posibilita evaluar el grado de coherencia y conexión lógica entre los elementos del estudio, actuando como un mecanismo de control de calidad del diseño"</em>.</p>
+
+   <ul class="article-list">
+    <li><strong>Verifica la coherencia:</strong> Asegura que todos los elementos del proyecto estén articulados lógicamente entre sí (Giesecke, 2020).</li>
+    <li><strong>Evita inconsistencias:</strong> Previene incoherencias entre el problema, objetivos, hipótesis, variables y metodología (Vera y Lugo, 2016).</li>
+    <li><strong>Actúa como hoja de ruta:</strong> Guía al investigador durante todo el desarrollo del estudio (Arias, 2016).</li>
+    <li><strong>Facilita la evaluación:</strong> Permite a jurados y asesores visualizar la estructura del proyecto de forma panorámica (Carrasco, 2018).</li>
+    <li><strong>Fortalece la credibilidad:</strong> Un proyecto con coherencia lógica tiene mayor solidez científica (Hernández-Sampieri y Fernández-Collado, 2018).</li>
+    <li><strong>Agiliza la redacción:</strong> Establece un orden lógico que facilita la escritura del contenido de la tesis (Rojas, 2010).</li>
+   </ul>
+
+   <div class="article-quote">
+    <blockquote>
+     "La matriz de consistencia, como su nombre indica, permite consolidar los elementos claves de todo el proceso de investigación, además posibilita evaluar el grado de coherencia y conexión lógica entre el título, el problema, la hipótesis, los objetivos, las variables, el diseño de investigación seleccionado, los instrumentos de investigación, así como la población y la muestra del estudio."
+     <cite>— Giesecke, 2020</cite>
+    </blockquote>
+   </div>
+
+   <!-- SVG: 4 Funciones en tarjetas coloreadas -->
+   <div class="article-image">
+    <svg viewBox="0 0 700 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+     <rect width="700" height="200" rx="16" fill="#f6f8fc" stroke="#e0e5ed" stroke-width="1.5"/>
+     <text x="350" y="28" text-anchor="middle" fill="#12172a" font-size="13" font-weight="bold" font-family="Inter, sans-serif">Funciones principales de la Matriz de Consistencia</text>
+     <!-- Card 1 -->
+     <rect x="20" y="48" width="155" height="115" rx="10" fill="#fff" stroke="#38b9c9" stroke-width="1.5"/>
+     <rect x="20" y="48" width="155" height="8" rx="10" fill="#38b9c9"/>
+     <circle cx="97" cy="82" r="14" fill="#e8f8fa"/>
+     <text x="97" y="87" text-anchor="middle" fill="#38b9c9" font-size="18">&#10003;</text>
+     <text x="97" y="118" text-anchor="middle" fill="#12172a" font-size="10.5" font-weight="bold" font-family="Inter, sans-serif">Verificar coherencia</text>
+     <text x="97" y="133" text-anchor="middle" fill="#626b7f" font-size="8.5" font-family="Inter, sans-serif">Giesecke (2020)</text>
+     <!-- Card 2 -->
+     <rect x="190" y="48" width="155" height="115" rx="10" fill="#fff" stroke="#756fd0" stroke-width="1.5"/>
+     <rect x="190" y="48" width="155" height="8" rx="10" fill="#756fd0"/>
+     <circle cx="267" cy="82" r="14" fill="#f0ecfa"/>
+     <text x="267" y="87" text-anchor="middle" fill="#756fd0" font-size="18">&#9888;</text>
+     <text x="267" y="118" text-anchor="middle" fill="#12172a" font-size="10.5" font-weight="bold" font-family="Inter, sans-serif">Evitar errores</text>
+     <text x="267" y="133" text-anchor="middle" fill="#626b7f" font-size="8.5" font-family="Inter, sans-serif">Vera y Lugo (2016)</text>
+     <!-- Card 3 -->
+     <rect x="360" y="48" width="155" height="115" rx="10" fill="#fff" stroke="#38b9c9" stroke-width="1.5"/>
+     <rect x="360" y="48" width="155" height="8" rx="10" fill="#38b9c9"/>
+     <circle cx="437" cy="82" r="14" fill="#e8f8fa"/>
+     <text x="437" y="87" text-anchor="middle" fill="#38b9c9" font-size="18">&#9670;</text>
+     <text x="437" y="118" text-anchor="middle" fill="#12172a" font-size="10.5" font-weight="bold" font-family="Inter, sans-serif">Guía el proceso</text>
+     <text x="437" y="133" text-anchor="middle" fill="#626b7f" font-size="8.5" font-family="Inter, sans-serif">Arias (2016)</text>
+     <!-- Card 4 -->
+     <rect x="530" y="48" width="155" height="115" rx="10" fill="#fff" stroke="#756fd0" stroke-width="1.5"/>
+     <rect x="530" y="48" width="155" height="8" rx="10" fill="#756fd0"/>
+     <circle cx="607" cy="82" r="14" fill="#f0ecfa"/>
+     <text x="607" y="87" text-anchor="middle" fill="#756fd0" font-size="18">&#9733;</text>
+     <text x="607" y="118" text-anchor="middle" fill="#12172a" font-size="10.5" font-weight="bold" font-family="Inter, sans-serif">Evaluar el diseño</text>
+     <text x="607" y="133" text-anchor="middle" fill="#626b7f" font-size="8.5" font-family="Inter, sans-serif">Carrasco (2018)</text>
+     <!-- Bottom text -->
+     <text x="350" y="186" text-anchor="middle" fill="#626b7f" font-size="9.5" font-family="Inter, sans-serif">Cada función contribuye a la solidez y validez del diseño de investigación.</text>
+    </svg>
+    <span class="img-caption">Figura 3. Cuatro funciones esenciales de la Matriz de Consistencia según la literatura.</span>
+   </div>
+
+   <!-- SVG Divisor -->
+   <div class="article-image">
+    <svg viewBox="0 0 700 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+     <line x1="0" y1="10" x2="320" y2="10" stroke="#e0e5ed" stroke-width="1.2"/>
+     <circle cx="350" cy="10" r="5" fill="#38b9c9"/>
+     <line x1="380" y1="10" x2="700" y2="10" stroke="#e0e5ed" stroke-width="1.2"/>
+    </svg>
+   </div>
+
+   <!-- ============================================================ -->
+   <!-- SECCIÓN 4: ¿Cómo elaborarla? Paso a paso -->
+   <!-- ============================================================ -->
+   <h2>¿Cómo elaborarla? Paso a paso</h2>
+   <p>El proceso correcto para elaborar una Matriz de Consistencia no es llenar la tabla de izquierda a derecha, sino seguir un orden lógico que garantice la coherencia. Rojas (2010) recomienda iniciar por la formulación del problema como eje central de todo el diseño.</p>
+
+   <div class="article-steps">
+    <div class="step">
+     <div class="step-num">1</div>
+     <div class="step-content">
+      <h4>Formula el problema general</h4>
+      <p>Todo parte de la pregunta central de tu investigación. Escríbela de forma interrogativa y precisa. Asegúrate de que exprese una relación entre variables (Kerlinger, 2002). Según Arias (2016), el problema debe ser factible, relevante y delimitado.</p>
+     </div>
+    </div>
+    <div class="step">
+     <div class="step-num">2</div>
+     <div class="step-content">
+      <h4>Desglosa en problemas específicos</h4>
+      <p>Cada problema específico explora un aspecto concreto del problema general. Generalmente son 2 a 4 preguntas derivadas que abordan dimensiones distintas de la variable (Hernández-Sampieri y Fernández-Collado, 2018).</p>
+     </div>
+    </div>
+    <div class="step">
+     <div class="step-num">3</div>
+     <div class="step-content">
+      <h4>Deriva los objetivos</h4>
+      <p>Cada problema tiene su objetivo correspondiente: convierte la pregunta en intención utilizando un verbo en infinitivo (determinar, analizar, describir, etc.). Rojas (2010) recomienda que los verbos sean medibles y verificables.</p>
+     </div>
+    </div>
+    <div class="step">
+     <div class="step-num">4</div>
+     <div class="step-content">
+      <h4>Formula las hipótesis</h4>
+      <p>Para estudios correlacionales o experimentales, cada hipótesis responde a un problema específico e incluye ambas variables y el tipo de relación esperada (Creswell, 2018). Bunge (1972) aclara que la hipótesis debe ser falsable.</p>
+     </div>
+    </div>
+    <div class="step">
+     <div class="step-num">5</div>
+     <div class="step-content">
+      <h4>Identifica las variables</h4>
+      <p>De cada problema/hipótesis extrae las variables: cuál es la independiente (causa) y cuál la dependiente (efecto). Define dimensiones e indicadores medibles (Tamayo y Tamayo, 2018).</p>
+     </div>
+    </div>
+    <div class="step">
+     <div class="step-num">6</div>
+     <div class="step-content">
+      <h4>Especifica la metodología</h4>
+      <p>Define el tipo de investigación, diseño, método, población, muestra, técnicas e instrumentos de recolección y análisis de datos (Sampieri, Collado y Lucio, 2014). Carrasco (2018) subraya la importancia de especificar n, técnica de muestreo e instrumento.</p>
+     </div>
+    </div>
+   </div>
+
+   <!-- SVG: Diagrama de flujo de elaboración -->
+   <div class="article-image">
+    <svg viewBox="0 0 700 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+     <rect width="700" height="150" rx="16" fill="#f6f8fc" stroke="#e0e5ed" stroke-width="1.5"/>
+     <text x="350" y="24" text-anchor="middle" fill="#12172a" font-size="13" font-weight="bold" font-family="Inter, sans-serif">Flujo de elaboración paso a paso</text>
+     <!-- Step boxes -->
+     <rect x="12" y="45" width="90" height="44" rx="8" fill="#38b9c9" fill-opacity=".15" stroke="#38b9c9" stroke-width="1.2"/>
+     <text x="57" y="72" text-anchor="middle" fill="#38b9c9" font-size="9.5" font-weight="bold" font-family="Inter, sans-serif">Problema</text>
+     <line x1="102" y1="67" x2="118" y2="67" stroke="#756fd0" stroke-width="2"/>
+     <polygon points="118,61 130,67 118,73" fill="#756fd0"/>
+     <rect x="130" y="45" width="90" height="44" rx="8" fill="#756fd0" fill-opacity=".15" stroke="#756fd0" stroke-width="1.2"/>
+     <text x="175" y="72" text-anchor="middle" fill="#756fd0" font-size="9.5" font-weight="bold" font-family="Inter, sans-serif">Objetivos</text>
+     <line x1="220" y1="67" x2="236" y2="67" stroke="#756fd0" stroke-width="2"/>
+     <polygon points="236,61 248,67 236,73" fill="#756fd0"/>
+     <rect x="248" y="45" width="90" height="44" rx="8" fill="#38b9c9" fill-opacity=".15" stroke="#38b9c9" stroke-width="1.2"/>
+     <text x="293" y="72" text-anchor="middle" fill="#38b9c9" font-size="9.5" font-weight="bold" font-family="Inter, sans-serif">Hipótesis</text>
+     <line x1="338" y1="67" x2="354" y2="67" stroke="#756fd0" stroke-width="2"/>
+     <polygon points="354,61 366,67 354,73" fill="#756fd0"/>
+     <rect x="366" y="45" width="90" height="44" rx="8" fill="#756fd0" fill-opacity=".15" stroke="#756fd0" stroke-width="1.2"/>
+     <text x="411" y="72" text-anchor="middle" fill="#756fd0" font-size="9.5" font-weight="bold" font-family="Inter, sans-serif">Variables</text>
+     <line x1="456" y1="67" x2="472" y2="67" stroke="#756fd0" stroke-width="2"/>
+     <polygon points="472,61 484,67 472,73" fill="#756fd0"/>
+     <rect x="484" y="45" width="90" height="44" rx="8" fill="#38b9c9" fill-opacity=".15" stroke="#38b9c9" stroke-width="1.2"/>
+     <text x="529" y="72" text-anchor="middle" fill="#38b9c9" font-size="9.5" font-weight="bold" font-family="Inter, sans-serif">Indicadores</text>
+     <line x1="574" y1="67" x2="590" y2="67" stroke="#756fd0" stroke-width="2"/>
+     <polygon points="590,61 602,67 590,73" fill="#756fd0"/>
+     <rect x="602" y="45" width="82" height="44" rx="8" fill="#756fd0" fill-opacity=".25" stroke="#756fd0" stroke-width="1.5"/>
+     <text x="643" y="72" text-anchor="middle" fill="#756fd0" font-size="9.5" font-weight="bold" font-family="Inter, sans-serif">Método</text>
+     <!-- Bottom note -->
+     <rect x="20" y="105" width="660" height="30" rx="6" fill="#fff" stroke="#e0e5ed" stroke-width="1"/>
+     <text x="350" y="124" text-anchor="middle" fill="#626b7f" font-size="10" font-family="Inter, sans-serif">Cada paso se deriva del anterior. No llenes la tabla de izquierda a derecha.</text>
+    </svg>
+    <span class="img-caption">Figura 4. Flujo de elaboración: cada componente se deriva del anterior (Rojas, 2010; Sampieri, 2014).</span>
+   </div>
+
+   <!-- SVG Divisor -->
+   <div class="article-image">
+    <svg viewBox="0 0 700 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+     <line x1="0" y1="10" x2="320" y2="10" stroke="#e0e5ed" stroke-width="1.2"/>
+     <circle cx="350" cy="10" r="5" fill="#756fd0"/>
+     <line x1="380" y1="10" x2="700" y2="10" stroke="#e0e5ed" stroke-width="1.2"/>
+    </svg>
+   </div>
+
+   <!-- ============================================================ -->
+   <!-- SECCIÓN 5: Ejemplo práctico -->
+   <!-- ============================================================ -->
+   <h2>Ejemplo práctico</h2>
+   <p>A continuación se presenta un ejemplo de Matriz de Consistencia para un estudio sobre el impacto de las TICs en el rendimiento académico. Arias (2016) recomienda construir la matriz comenzando por el problema y avanzando secuencialmente hacia la metodología.</p>
+
+   <div class="article-table-wrapper">
+    <table class="article-table">
+     <thead>
+      <tr>
+       <th>Problema</th>
+       <th>Objetivo</th>
+       <th>Hipótesis</th>
+       <th>Variables</th>
+       <th>Metodología</th>
+      </tr>
+     </thead>
+     <tbody>
+      <tr>
+       <td>¿Qué relación existe entre el uso de TICs y el rendimiento académico de estudiantes de 5to de secundaria?</td>
+       <td>Determinar la relación entre el uso de TICs y el rendimiento académico.</td>
+       <td>Existe relación significativa entre el uso de TICs y el rendimiento académico.</td>
+       <td>VI: Uso de TICs<br>VD: Rendimiento académico</td>
+       <td>Cuantitativo, descriptivo correlacional, 150 estudiantes, encuesta + actas de notas</td>
+      </tr>
+      <tr>
+       <td>¿Cuál es el nivel de uso de TICs en los estudiantes?</td>
+       <td>Describir el nivel de uso de TICs en los estudiantes.</td>
+       <td>El nivel de uso de TICs es medio-alto en la mayoría.</td>
+       <td>V1: Frecuencia de uso<br>Indicador: horas diarias</td>
+       <td>Cuestionario validado, escala Likert 5 puntos</td>
+      </tr>
+      <tr>
+       <td>¿Cuál es el nivel de rendimiento académico de los estudiantes?</td>
+       <td>Describir el nivel de rendimiento académico de los estudiantes.</td>
+       <td>El rendimiento académico es satisfactorio en la mayoría.</td>
+       <td>V2: Promedio general<br>Indicador: calificación final</td>
+       <td>Análisis de actas de notas del período 2025-I</td>
+      </tr>
+     </tbody>
+    </table>
+   </div>
+
+   <div class="article-quote">
+    <blockquote>
+     "La construcción de la matriz de consistencia debe seguir un orden lógico que permita verificar la coherencia entre cada uno de los elementos, partiendo del problema como eje vertebrador del diseño de investigación."
+     <cite>— Arias, 2016</cite>
+    </blockquote>
+   </div>
+
+   <!-- SVG: Estructura del ejemplo -->
+   <div class="article-image">
+    <svg viewBox="0 0 700 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+     <rect width="700" height="160" rx="16" fill="#f6f8fc" stroke="#e0e5ed" stroke-width="1.5"/>
+     <text x="350" y="26" text-anchor="middle" fill="#12172a" font-size="13" font-weight="bold" font-family="Inter, sans-serif">Ejemplo: TICs y Rendimiento Académico</text>
+     <!-- Row 1: Problem -->
+     <rect x="20" y="44" width="120" height="50" rx="8" fill="#38b9c9" fill-opacity=".15" stroke="#38b9c9" stroke-width="1.2"/>
+     <text x="80" y="64" text-anchor="middle" fill="#38b9c9" font-size="9" font-weight="bold" font-family="Inter, sans-serif">PROBLEMA</text>
+     <text x="80" y="82" text-anchor="middle" fill="#12172a" font-size="8" font-family="Inter, sans-serif">Relación TICs-</text>
+     <text x="80" y="92" text-anchor="middle" fill="#12172a" font-size="8" font-family="Inter, sans-serif">Rendimiento</text>
+     <line x1="140" y1="69" x2="158" y2="69" stroke="#756fd0" stroke-width="1.8"/>
+     <polygon points="158,64 168,69 158,74" fill="#756fd0"/>
+     <!-- Row 2: Objective -->
+     <rect x="168" y="44" width="120" height="50" rx="8" fill="#756fd0" fill-opacity=".15" stroke="#756fd0" stroke-width="1.2"/>
+     <text x="228" y="64" text-anchor="middle" fill="#756fd0" font-size="9" font-weight="bold" font-family="Inter, sans-serif">OBJETIVO</text>
+     <text x="228" y="82" text-anchor="middle" fill="#12172a" font-size="8" font-family="Inter, sans-serif">Determinar la</text>
+     <text x="228" y="92" text-anchor="middle" fill="#12172a" font-size="8" font-family="Inter, sans-serif">relación</text>
+     <line x1="288" y1="69" x2="306" y2="69" stroke="#756fd0" stroke-width="1.8"/>
+     <polygon points="306,64 316,69 306,74" fill="#756fd0"/>
+     <!-- Row 3: Hypothesis -->
+     <rect x="316" y="44" width="120" height="50" rx="8" fill="#38b9c9" fill-opacity=".15" stroke="#38b9c9" stroke-width="1.2"/>
+     <text x="376" y="64" text-anchor="middle" fill="#38b9c9" font-size="9" font-weight="bold" font-family="Inter, sans-serif">HIPÓTESIS</text>
+     <text x="376" y="82" text-anchor="middle" fill="#12172a" font-size="8" font-family="Inter, sans-serif">Relación</text>
+     <text x="376" y="92" text-anchor="middle" fill="#12172a" font-size="8" font-family="Inter, sans-serif">significativa</text>
+     <line x1="436" y1="69" x2="454" y2="69" stroke="#756fd0" stroke-width="1.8"/>
+     <polygon points="454,64 464,69 454,74" fill="#756fd0"/>
+     <!-- Row 4: Variables -->
+     <rect x="464" y="44" width="120" height="50" rx="8" fill="#756fd0" fill-opacity=".15" stroke="#756fd0" stroke-width="1.2"/>
+     <text x="524" y="64" text-anchor="middle" fill="#756fd0" font-size="9" font-weight="bold" font-family="Inter, sans-serif">VARIABLES</text>
+     <text x="524" y="82" text-anchor="middle" fill="#12172a" font-size="8" font-family="Inter, sans-serif">VI: TICs</text>
+     <text x="524" y="92" text-anchor="middle" fill="#12172a" font-size="8" font-family="Inter, sans-serif">VD: Rendimiento</text>
+     <line x1="584" y1="69" x2="602" y2="69" stroke="#756fd0" stroke-width="1.8"/>
+     <polygon points="602,64 612,69 602,74" fill="#756fd0"/>
+     <!-- Row 5: Method -->
+     <rect x="612" y="44" width="72" height="50" rx="8" fill="#38b9c9" fill-opacity=".25" stroke="#38b9c9" stroke-width="1.5"/>
+     <text x="648" y="64" text-anchor="middle" fill="#38b9c9" font-size="9" font-weight="bold" font-family="Inter, sans-serif">MÉTODO</text>
+     <text x="648" y="82" text-anchor="middle" fill="#12172a" font-size="7.5" font-family="Inter, sans-serif">Correlacional</text>
+     <text x="648" y="92" text-anchor="middle" fill="#12172a" font-size="7.5" font-family="Inter, sans-serif">n=150</text>
+     <!-- Bottom caption -->
+     <text x="350" y="125" text-anchor="middle" fill="#626b7f" font-size="9.5" font-family="Inter, sans-serif">Estructura de la matriz: cada celda se deriva de la anterior en cadena lógica.</text>
+     <text x="350" y="142" text-anchor="middle" fill="#626b7f" font-size="9" font-family="Inter, sans-serif">Ejemplo basado en Arias (2016) y Sampieri, Collado y Lucio (2014).</text>
+    </svg>
+    <span class="img-caption">Figura 5. Diagrama de la estructura del ejemplo práctico con TICs y rendimiento académico.</span>
+   </div>
+
+   <!-- SVG Divisor -->
+   <div class="article-image">
+    <svg viewBox="0 0 700 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+     <line x1="0" y1="10" x2="320" y2="10" stroke="#e0e5ed" stroke-width="1.2"/>
+     <circle cx="350" cy="10" r="5" fill="#38b9c9"/>
+     <line x1="380" y1="10" x2="700" y2="10" stroke="#e0e5ed" stroke-width="1.2"/>
+    </svg>
+   </div>
+
+   <!-- ============================================================ -->
+   <!-- SECCIÓN 6: Errores comunes que debes evitar -->
+   <!-- ============================================================ -->
+   <h2>Errores comunes que debes evitar</h2>
+   <p>Según Arias (2016) y Hernández-Sampieri y Fernández-Collado (2018), los errores más frecuentes al construir la Matriz de Consistencia comprometen la validez interna del estudio. Identificarlos a tiempo permite corregir el diseño antes de avanzar en la recolección de datos.</p>
+
+   <div class="article-alerts">
+    <div class="alert alert-error">
+     <div class="alert-icon">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#dc3545" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M15 9l-6 6M9 9l6 6"/></svg>
+     </div>
+     <div>
+      <h4>Problemas y objetivos que no corresponden</h4>
+      <p>El objetivo debe ser la versión afirmativa (intención) del problema. Si no se puede derivar directamente, hay una inconsistencia (Arias, 2016). Kerlinger (2002) subraya que cada objetivo debe responder a un problema específico.</p>
+     </div>
+    </div>
+    <div class="alert alert-error">
+     <div class="alert-icon">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#dc3545" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M15 9l-6 6M9 9l6 6"/></svg>
+     </div>
+     <div>
+      <h4>Hipótesis que no incluyen ambas variables</h4>
+      <p>Una hipótesis correlacional siempre debe mencionar la variable independiente, la dependiente y el tipo de relación esperada (Creswell, 2018). Bunge (1972) advierte que una hipótesis incompleta no puede ser sometida a prueba.</p>
+     </div>
+    </div>
+    <div class="alert alert-error">
+     <div class="alert-icon">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#dc3545" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M15 9l-6 6M9 9l6 6"/></svg>
+     </div>
+     <div>
+      <h4>Variables sin indicadores definidos</h4>
+      <p>"Calidad de vida" no es un indicador medible. Debes especificar: índice de satisfacción, número de días de enfermedad, nivel de ingresos, etc. Tamayo y Tamayo (2018) insiste en la operacionalización rigurosa de cada variable.</p>
+     </div>
+    </div>
+    <div class="alert alert-error">
+     <div class="alert-icon">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#dc3545" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M15 9l-6 6M9 9l6 6"/></svg>
+     </div>
+     <div>
+      <h4>Metodología vaga</h4>
+      <p>No basta con escribir "cuantitativo". Especifica: tipo (descriptivo, correlacional, experimental), diseño, muestra (n=X) e instrumento (Sampieri, Collado y Lucio, 2014). Carrasco (2018) destaca que la metodología debe ser replicable.</p>
+     </div>
+    </div>
+   </div>
+
+   <!-- SVG Divisor -->
+   <div class="article-image">
+    <svg viewBox="0 0 700 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+     <line x1="0" y1="10" x2="320" y2="10" stroke="#e0e5ed" stroke-width="1.2"/>
+     <circle cx="350" cy="10" r="5" fill="#756fd0"/>
+     <line x1="380" y1="10" x2="700" y2="10" stroke="#e0e5ed" stroke-width="1.2"/>
+    </svg>
+   </div>
+
+   <!-- ============================================================ -->
+   <!-- SECCIÓN 7: Características principales -->
+   <!-- ============================================================ -->
+   <h2>Características principales</h2>
+
+   <div class="article-features">
+    <div class="feature-item">
+     <div class="feature-icon">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#38b9c9" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M3 9h18M9 3v18"/></svg>
+     </div>
+     <div>
+      <h4>Instrumento de ponderación</h4>
+      <p>Mide y evalúa el grado de coherencia entre los elementos esenciales del proceso de investigación (Giesecke, 2020).</p>
+     </div>
+    </div>
+    <div class="feature-item">
+     <div class="feature-icon">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#756fd0" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+     </div>
+     <div>
+      <h4>Se elabora al inicio</h4>
+      <p>Es un documento que se crea al inicio del proceso investigativo y se consolida después de terminar el diseño (Vera y Lugo, 2016).</p>
+     </div>
+    </div>
+    <div class="feature-item">
+     <div class="feature-icon">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#38b9c9" stroke-width="1.8"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg>
+     </div>
+     <div>
+      <h4>Visión panorámica</h4>
+      <p>Presenta una visión general de los principales elementos del proyecto de investigación en un solo vistazo (Hernández-Sampieri y Fernández-Collado, 2018).</p>
+     </div>
+    </div>
+    <div class="feature-item">
+     <div class="feature-icon">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#756fd0" stroke-width="1.8"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+     </div>
+     <div>
+      <h4>Estructura en filas y columnas</h4>
+      <p>Las columnas representan los elementos de la investigación y las filas los detalles de cada rubro (Arias, 2016).</p>
+     </div>
+    </div>
+   </div>
+
+   <!-- ============================================================ -->
+   <!-- SECCIÓN 8: Referencias -->
+   <!-- ============================================================ -->
+   <h2>Referencias</h2>
+
+   <div class="article-references">
+    <p>Arias, F. (2016). <em>El proyecto de investigación: Introducción a la metodología científica</em> (7a ed.). Episteme.</p>
+    <p>Bunge, M. (1972). <em>La investigación científica: su estrategia y su filosofía</em>. Ariel.</p>
+    <p>Carrasco, E. (2018). Metodología de la investigación científica. <em>Revista Ciencia Latina</em>, 2(4), 1476-1493.</p>
+    <p>Creswell, J. W. (2018). <em>Research design: qualitative, quantitative, and mixed methods approaches</em> (5th ed.). SAGE.</p>
+    <p>Giesecke, M. (2020). <em>Fundamentos de metodología de investigación</em>. McGraw-Hill.</p>
+    <p>Hernández-Sampieri, R. y Fernández-Collado, C. (2018). <em>Metodología de la investigación</em> (7a ed.). McGraw-Hill.</p>
+    <p>Kerlinger, F. N. (2002). <em>Investigación del comportamiento: métodos de investigación en ciencias sociales</em> (4a ed.). McGraw-Hill.</p>
+    <p>Rojas, S. (2010). <em>Investigación científica en las ciencias sociales</em>. Episteme.</p>
+    <p>Sampieri, R., Collado, C. y Lucio, P. (2014). <em>Metodología de la investigación</em> (6a ed.). McGraw-Hill.</p>
+    <p>Tamayo y Tamayo, M. (2018). <em>El proceso de la investigación científica</em> (5a ed.). Limusa.</p>
+    <p>Vera, C. y Lugo, J. (2016). La matriz de congruencia como herramienta metodológica. <em>Revista Venezolana de Gerencia</em>, 21(76), 681-694.</p>
+   </div>
+
+  </article>
+
+  <!-- ===== COMPARTIR ===== -->
+  <div class="article-share">
+   <span class="share-label">Compartir artículo</span>
+   <div class="share-buttons">
+    <a class="share-btn share-whatsapp" href="https://wa.me/?text=La%20Matriz%20de%20Consistencia%20-%20JM%20Lee%20investiga%20aprende%20%0Ahttps%3A%2F%2Fjmleeinvestigaaprende.com%2Fblog-matriz-consistencia.html" target="_blank" rel="noopener" aria-label="Compartir en WhatsApp">
+     <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.52 3.48A11.81 11.81 0 0 0 12.06 0C5.5 0 .16 5.34.16 11.9c0 2.1.55 4.15 1.6 5.95L.06 24l6.3-1.65a11.87 11.87 0 0 0 5.69 1.45h.01c6.56 0 11.9-5.34 11.9-11.9 0-3.18-1.22-6.17-3.44-8.42ZM12.06 21.8h-.01a9.86 9.86 0 0 1-5.03-1.38l-.36-.22-3.74.98 1-3.64-.23-.38a9.87 9.87 0 0 1-1.52-5.26c0-5.46 4.44-9.9 9.9-9.9 2.64 0 5.12 1.03 6.98 2.9a9.82 9.82 0 0 1 2.9 7c0 5.46-4.44 9.9-9.89 9.9Zm5.43-7.41c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48a8.94 8.94 0 0 1-1.66-2.07c-.17-.3-.02-.46.13-.6.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.49s1.07 2.89 1.22 3.09c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.7.63.71.23 1.36.19 1.87.12.57-.08 1.76-.72 2.01-1.41.25-.7.25-1.3.17-1.42-.07-.13-.27-.2-.57-.35Z"/></svg>
+     <span>WhatsApp</span>
+    </a>
+    <a class="share-btn share-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fjmleeinvestigaaprende.com%2Fblog-matriz-consistencia.html" target="_blank" rel="noopener" aria-label="Compartir en Facebook">
+     <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.07C24 5.41 18.63 0 12 0S0 5.41 0 12.07c0 6.02 4.39 11.01 10.13 11.93v-8.44H7.08v-3.49h3.04V9.41c0-3.02 1.79-4.69 4.53-4.69 1.31 0 2.68.24 2.68.24v2.97h-1.51c-1.49 0-1.95.93-1.95 1.88v2.26h3.33l-.53 3.49h-2.8v8.44C19.61 23.08 24 18.09 24 12.07Z"/></svg>
+     <span>Facebook</span>
+    </a>
+    <a class="share-btn share-x" href="https://twitter.com/intent/tweet?text=La%20Matriz%20de%20Consistencia%20-%20JM%20Lee%20investiga%20aprende&url=https%3A%2F%2Fjmleeinvestigaaprende.com%2Fblog-matriz-consistencia.html" target="_blank" rel="noopener" aria-label="Compartir en X">
+     <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+     <span>X</span>
+    </a>
+    <a class="share-btn share-linkedin" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fjmleeinvestigaaprende.com%2Fblog-matriz-consistencia.html" target="_blank" rel="noopener" aria-label="Compartir en LinkedIn">
+     <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+     <span>LinkedIn</span>
+    </a>
+    <button class="share-btn share-copy" type="button" onclick="navigator.clipboard.writeText(window.location.href).then(()=>{this.classList.add('copied');this.querySelector('span').textContent='Copiado';setTimeout(()=>{this.classList.remove('copied');this.querySelector('span').textContent='Copiar enlace'},2000)})" aria-label="Copiar enlace">
+     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+     <span>Copiar enlace</span>
+    </button>
+   </div>
+  </div>
+
+ </div>
+</section>
+
+<!-- ===== NAVEGACIÓN ENTRE ARTÍCULOS ===== -->
+<section class="article-nav">
+ <div class="container">
+  <div class="article-nav-inner">
+   <a href="blog.html" class="article-nav-link article-nav-back">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+    <div>
+     <span>Volver al blog</span>
+     <strong>Ver todos los artículos</strong>
+    </div>
+   </a>
+  </div>
+ </div>
+</section>
+</main>
+
+<footer>
+ <div class="container footer-row">
+   <a class="brand" href="index.html#inicio">
+    <img class="brand-logo" src="img/Logo.png" alt="JM — Lee, investiga, aprende" style="width:42px;height:42px;">
+    <div><strong style="font-size:.85rem;">JM — Investiga y aprende</strong><span style="font-size:.7rem;">Metodología de la investigación</span></div>
+   </a>
+  <div class="footer-links">
+   <a href="index.html#inicio">Inicio</a>
+   <a href="index.html#temas">Temas</a>
+   <a href="index.html#videos">Videos</a>
+   <a href="blog.html">Blog</a>
+   <a href="index.html#contacto">Contacto</a>
+   <a href="https://www.tiktok.com/@jmleeinvestigaaprende" target="_blank" rel="noopener">TikTok</a>
+  </div>
+  <span style="color:#626b7f;font-size:.8rem;">&copy; 2026 JM — Lee, investiga, aprende</span>
+ </div>
+</footer>
+
+<!-- WhatsApp Flotante -->
+<a class="whatsapp-float" href="https://wa.me/51922444639?text=Hola%2C%20quisiera%20recibir%20informaci%C3%B3n%20sobre%20los%20contenidos%20y%20recursos%20de%20metodolog%C3%ADa%20de%20la%20investigaci%C3%B3n." target="_blank" rel="noopener" aria-label="Contactar por WhatsApp al 922 444 639"><span class="wa-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.52 3.48A11.81 11.81 0 0 0 12.06 0C5.5 0 .16 5.34.16 11.9c0 2.1.55 4.15 1.6 5.95L.06 24l6.3-1.65a11.87 11.87 0 0 0 5.69 1.45h.01c6.56 0 11.9-5.34 11.9-11.9 0-3.18-1.22-6.17-3.44-8.42ZM12.06 21.8h-.01a9.86 9.86 0 0 1-5.03-1.38l-.36-.22-3.74.98 1-3.64-.23-.38a9.87 9.87 0 0 1-1.52-5.26c0-5.46 4.44-9.9 9.9-9.9 2.64 0 5.12 1.03 6.98 2.9a9.82 9.82 0 0 1 2.9 7c0 5.46-4.44 9.9-9.89 9.9Zm5.43-7.41c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48a8.94 8.94 0 0 1-1.66-2.07c-.17-.3-.02-.46.13-.6.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.49s1.07 2.89 1.22 3.09c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.7.63.71.23 1.36.19 1.87.12.57-.08 1.76-.72 2.01-1.41.25-.7.25-1.3.17-1.42-.07-.13-.27-.2-.57-.35Z"/></svg></span><span>WhatsApp</span></a>
+
+<script src="js/main.js"></script>
+</body>
+</html>
