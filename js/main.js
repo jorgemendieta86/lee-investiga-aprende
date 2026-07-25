@@ -8,9 +8,11 @@ const initial = saved || 'light';
 function paint(theme) {
   root.dataset.theme = theme;
   try { localStorage.setItem('jm-theme', theme); } catch(e) {}
-  icon.innerHTML = theme === 'dark'
+  const isDark = theme === 'dark';
+  icon.innerHTML = isDark
     ? '<circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.66 6.34l1.41-1.41"></path>'
     : '<path d="M12 3a6.5 6.5 0 1 0 9 9 8.4 8.4 0 0 1-9-9Z"></path>';
+  toggle.setAttribute('aria-label', isDark ? 'Cambiar a modo claro' : 'Cambiar a modo oscuro');
 }
 paint(initial);
 toggle.addEventListener('click', () => paint(root.dataset.theme === 'dark' ? 'light' : 'dark'));
@@ -43,7 +45,12 @@ const sections = sectionLinks.map(a => document.getElementById(a.dataset.section
 const activeObserver = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
-      sectionLinks.forEach(a => a.classList.toggle('active', a.dataset.section === entry.target.id));
+      sectionLinks.forEach(a => {
+        const isActive = a.dataset.section === entry.target.id;
+        a.classList.toggle('active', isActive);
+        if (isActive) a.setAttribute('aria-current', 'page');
+        else a.removeAttribute('aria-current');
+      });
     }
   });
 }, { rootMargin: '-35% 0px -55% 0px', threshold: 0 });
@@ -322,20 +329,35 @@ const modalClose = document.getElementById('modalClose');
 document.querySelectorAll('.category-card[data-tema]').forEach(card => {
   card.addEventListener('click', (e) => {
     e.preventDefault();
-    const temaKey = card.dataset.tema;
-    const tema = temasContenido[temaKey];
-    if (tema) {
-      modalTitle.textContent = tema.titulo;
-      modalContent.innerHTML = tema.contenido;
-      modalOverlay.classList.add('active');
-      document.body.style.overflow = 'hidden';
+    openTema(card.dataset.tema, card);
+  });
+  card.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      openTema(card.dataset.tema, card);
     }
   });
 });
 
+function openTema(temaKey, triggerEl) {
+  const tema = temasContenido[temaKey];
+  if (tema) {
+    modalTitle.textContent = tema.titulo;
+    modalContent.innerHTML = tema.contenido;
+    modalOverlay.classList.add('active');
+    document.body.style.overflow = 'hidden';
+    modalClose.focus();
+    if (triggerEl) modalOverlay._trigger = triggerEl;
+  }
+}
+
 function closeModal() {
   modalOverlay.classList.remove('active');
   document.body.style.overflow = '';
+  if (modalOverlay._trigger) {
+    modalOverlay._trigger.focus();
+    modalOverlay._trigger = null;
+  }
 }
 
 modalClose.addEventListener('click', closeModal);
@@ -344,4 +366,14 @@ modalOverlay.addEventListener('click', (e) => {
 });
 document.addEventListener('keydown', (e) => {
   if (e.key === 'Escape' && modalOverlay.classList.contains('active')) closeModal();
+  if (e.key === 'Tab' && modalOverlay.classList.contains('active')) {
+    const focusable = modalOverlay.querySelectorAll('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])');
+    const first = focusable[0];
+    const last = focusable[focusable.length - 1];
+    if (e.shiftKey) {
+      if (document.activeElement === first) { e.preventDefault(); last.focus(); }
+    } else {
+      if (document.activeElement === last) { e.preventDefault(); first.focus(); }
+    }
+  }
 });
