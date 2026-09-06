@@ -1,0 +1,55 @@
+name: Publicar blog en Facebook
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'blog-*.html'
+      - 'blog.html'
+      - 'scripts/facebook-blog-sync.js'
+      - '.github/workflows/facebook-blog-sync.yml'
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: Modo de sincronizacion
+        required: true
+        default: backfill
+        type: choice
+        options:
+          - backfill
+          - auto
+          - list
+      dry_run:
+        description: Solo mostrar que se publicaria
+        required: true
+        default: true
+        type: boolean
+
+jobs:
+  facebook-sync:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+
+    steps:
+      - name: Descargar repositorio
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Publicar articulos en Facebook
+        env:
+          MODE: ${{ github.event_name == 'workflow_dispatch' && inputs.mode || 'auto' }}
+          DRY_RUN: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run || 'false' }}
+          SITE_URL: ${{ vars.SITE_URL || 'https://jmleeinvestigaaprende.com' }}
+          FACEBOOK_PAGE_ID: ${{ secrets.FACEBOOK_PAGE_ID }}
+          FACEBOOK_PAGE_ACCESS_TOKEN: ${{ secrets.FACEBOOK_PAGE_ACCESS_TOKEN }}
+          GITHUB_EVENT_BEFORE: ${{ github.event.before }}
+          GITHUB_SHA: ${{ github.sha }}
+        run: node scripts/facebook-blog-sync.js

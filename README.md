@@ -57,6 +57,21 @@ LEE INVESTIGA APRENDE WEB/
    - **Publish directory**: `site`
 5. Cada push a `main` desplegará automáticamente los cambios
 
+### Publicacion automatica en Facebook
+Tambien puedes conectar el blog con tu pagina de Facebook para que cada articulo nuevo se publique automaticamente.
+
+1. En GitHub, crea estos secretos del repositorio:
+   - `FACEBOOK_PAGE_ACCESS_TOKEN`: token de pagina con permisos `pages_manage_posts` y `pages_read_engagement`
+   - `FACEBOOK_PAGE_ID`: id numerico de la pagina (si tu pagina usa el enlace compartido, normalmente sera `61585830158735`)
+2. En GitHub, crea la variable `SITE_URL` con la URL publica del sitio si no usas `https://jmleeinvestigaaprende.com`
+3. El workflow `/.github/workflows/facebook-blog-sync.yml` publicara automaticamente en Facebook cada nuevo archivo `blog-*.html` que llegue a `main`
+4. Para publicar tambien los articulos actuales, entra a **Actions > Publicar blog en Facebook > Run workflow** y ejecuta:
+   - `mode = backfill`
+   - `dry_run = false`
+5. Si quieres revisar antes lo que se publicara, ejecuta el mismo workflow con `dry_run = true`
+
+El script usado por la automatizacion esta en `scripts/facebook-blog-sync.js` y evita duplicados buscando si la URL del articulo ya existe en publicaciones previas de la pagina.
+
 ---
 
 ## Funcionalidades principales

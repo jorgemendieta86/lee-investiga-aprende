@@ -73,306 +73,10 @@
 <!-- ===== LISTADO DE ARTÍCULOS ===== -->
 <section class="blog-posts">
  <div class="container">
-  <div class="blog-grid">
+<div class="blog-grid">
 
-   <!-- CARD: Matriz de Consistencia -->
-   <a href="blog-matriz-consistencia.html" class="blog-card reveal">
-     <div class="blog-card-img">
-      <svg viewBox="0 0 420 220" fill="none" xmlns="http://www.w3.org/2000/svg">
-       <defs>
-        <linearGradient id="cbg1" x1="0" y1="0" x2="420" y2="220">
-         <stop stop-color="#0a0e1a"/>
-         <stop offset=".35" stop-color="#141836"/>
-         <stop offset=".7" stop-color="#1a1048"/>
-         <stop offset="1" stop-color="#0c1828"/>
-        </linearGradient>
-        <linearGradient id="glow1" x1="140" y1="60" x2="280" y2="180">
-         <stop stop-color="#38b9c9"/>
-         <stop offset="1" stop-color="#756fd0"/>
-        </linearGradient>
-        <radialGradient id="halo1" cx="50%" cy="50%" r="50%">
-         <stop stop-color="#38b9c9" stop-opacity=".18"/>
-         <stop offset="1" stop-color="#38b9c9" stop-opacity="0"/>
-        </radialGradient>
-       </defs>
-       <rect width="420" height="220" fill="url(#cbg1)"/>
-       <!-- Halo central -->
-       <ellipse cx="210" cy="110" rx="130" ry="100" fill="url(#halo1)"/>
-       <!-- Líneas de conexión entre nodos -->
-       <line x1="210" y1="55" x2="95" y2="120" stroke="url(#glow1)" stroke-width="2" opacity=".55"/>
-       <line x1="210" y1="55" x2="325" y2="120" stroke="url(#glow1)" stroke-width="2" opacity=".55"/>
-       <line x1="95" y1="120" x2="140" y2="190" stroke="url(#glow1)" stroke-width="2" opacity=".45"/>
-       <line x1="325" y1="120" x2="280" y2="190" stroke="url(#glow1)" stroke-width="2" opacity=".45"/>
-       <line x1="140" y1="190" x2="280" y2="190" stroke="url(#glow1)" stroke-width="2" opacity=".45"/>
-       <line x1="95" y1="120" x2="325" y2="120" stroke="#756fd0" stroke-width="1.5" opacity=".3" stroke-dasharray="6 4"/>
-       <line x1="140" y1="190" x2="210" y2="55" stroke="#38b9c9" stroke-width="1" opacity=".2" stroke-dasharray="4 4"/>
-       <line x1="280" y1="190" x2="210" y2="55" stroke="#38b9c9" stroke-width="1" opacity=".2" stroke-dasharray="4 4"/>
-       <!-- Nodo central (hub) -->
-       <circle cx="210" cy="110" r="18" fill="#0d1020" stroke="#756fd0" stroke-width="2" opacity=".9"/>
-       <circle cx="210" cy="110" r="10" fill="url(#glow1)" opacity=".7"/>
-       <circle cx="210" cy="110" r="22" fill="none" stroke="#38b9c9" stroke-width="1" opacity=".3"/>
-       <!-- Nodo 1: Problema (arriba) -->
-       <rect x="182" y="38" width="56" height="34" rx="8" fill="#0d1020" stroke="#38b9c9" stroke-width="1.8"/>
-       <text x="210" y="59" text-anchor="middle" fill="#38b9c9" font-size="8" font-weight="bold" font-family="Inter,sans-serif">PROBLEMA</text>
-       <!-- Nodo 2: Objetivos (izq) -->
-       <rect x="52" y="103" width="86" height="34" rx="8" fill="#0d1020" stroke="#38b9c9" stroke-width="1.8"/>
-       <text x="95" y="124" text-anchor="middle" fill="#38b9c9" font-size="8" font-weight="bold" font-family="Inter,sans-serif">OBJETIVOS</text>
-       <!-- Nodo 3: Hipótesis (der) -->
-       <rect x="282" y="103" width="86" height="34" rx="8" fill="#0d1020" stroke="#756fd0" stroke-width="1.8"/>
-       <text x="325" y="124" text-anchor="middle" fill="#958be4" font-size="8" font-weight="bold" font-family="Inter,sans-serif">HIPÓTESIS</text>
-       <!-- Nodo 4: Variables (izq-abajo) -->
-       <rect x="100" y="173" width="80" height="34" rx="8" fill="#0d1020" stroke="#756fd0" stroke-width="1.8"/>
-       <text x="140" y="194" text-anchor="middle" fill="#958be4" font-size="8" font-weight="bold" font-family="Inter,sans-serif">VARIABLES</text>
-       <!-- Nodo 5: Metodología (der-abajo) -->
-       <rect x="240" y="173" width="80" height="34" rx="8" fill="#0d1020" stroke="#38b9c9" stroke-width="1.8"/>
-       <text x="280" y="194" text-anchor="middle" fill="#38b9c9" font-size="8" font-weight="bold" font-family="Inter,sans-serif">METODOLOGÍA</text>
-       <!-- Décor: pontos flotantes -->
-       <circle cx="38" cy="32" r="3" fill="#38b9c9" opacity=".5"/>
-       <circle cx="390" cy="50" r="4" fill="#756fd0" opacity=".4"/>
-       <circle cx="30" cy="195" r="2.5" fill="#756fd0" opacity=".35"/>
-       <circle cx="400" cy="200" r="3" fill="#38b9c9" opacity=".3"/>
-       <circle cx="350" cy="35" r="2" fill="#38b9c9" opacity=".4"/>
-       <!-- Décor: tiny diamonds -->
-       <rect x="52" y="40" width="5" height="5" rx="1" fill="#38b9c9" opacity=".3" transform="rotate(45 54.5 42.5)"/>
-       <rect x="365" y="180" width="4" height="4" rx="1" fill="#756fd0" opacity=".3" transform="rotate(45 367 182)"/>
-      </svg>
-      <span class="blog-card-tag">Herramienta metodológica</span>
-     </div>
-     <div class="blog-card-body">
-      <time datetime="2026-07-24">24 de julio, 2026</time>
-      <h3>La Matriz de Consistencia</h3>
-      <p>Descubre cómo esta herramienta te permite visualizar y verificar la coherencia lógica entre todos los elementos de tu proyecto de investigación.</p>
-      <span class="blog-card-read">Leer artículo <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-     </div>
-    </a>
-
-   <!-- CARD: Matriz de Operacionalización de Variables -->
-    <a href="blog-matriz-operacionalizacion-variables.html" class="blog-card reveal">
-     <div class="blog-card-img">
-      <svg viewBox="0 0 420 220" fill="none" xmlns="http://www.w3.org/2000/svg">
-       <defs>
-        <linearGradient id="cbg2" x1="0" y1="0" x2="420" y2="220">
-         <stop stop-color="#0a0e1a"/>
-         <stop offset=".3" stop-color="#141836"/>
-         <stop offset=".65" stop-color="#1a1048"/>
-         <stop offset="1" stop-color="#0c1828"/>
-        </linearGradient>
-        <linearGradient id="flow2" x1="80" y1="110" x2="400" y2="110">
-         <stop stop-color="#38b9c9"/>
-         <stop offset=".5" stop-color="#756fd0"/>
-         <stop offset="1" stop-color="#38b9c9"/>
-        </linearGradient>
-        <radialGradient id="halo2" cx="18%" cy="50%" r="35%">
-         <stop stop-color="#756fd0" stop-opacity=".2"/>
-         <stop offset="1" stop-color="#756fd0" stop-opacity="0"/>
-        </radialGradient>
-       </defs>
-       <rect width="420" height="220" fill="url(#cbg2)"/>
-       <ellipse cx="100" cy="110" rx="120" ry="90" fill="url(#halo2)"/>
-       <!-- Variable central (bloque grande izquierda) -->
-       <rect x="28" y="68" width="100" height="84" rx="12" fill="#0d1020" stroke="#756fd0" stroke-width="2.2"/>
-       <text x="78" y="106" text-anchor="middle" fill="#958be4" font-size="9" font-weight="bold" font-family="Inter,sans-serif">VARIABLE</text>
-       <text x="78" y="122" text-anchor="middle" fill="#756fd0" font-size="7" font-family="Inter,sans-serif" opacity=".7">teórica</text>
-       <!-- Flechas de flujo -->
-       <path d="M130 85 L190 55" stroke="#38b9c9" stroke-width="1.8" opacity=".6" stroke-linecap="round"/>
-       <path d="M130 95 L190 95" stroke="#756fd0" stroke-width="1.8" opacity=".6" stroke-linecap="round"/>
-       <path d="M130 105 L190 140" stroke="#38b9c9" stroke-width="1.8" opacity=".6" stroke-linecap="round"/>
-       <path d="M130 115 L190 175" stroke="#756fd0" stroke-width="1.8" opacity=".6" stroke-linecap="round"/>
-       <!-- Flechas: puntas -->
-       <polygon points="188,52 196,55 188,58" fill="#38b9c9" opacity=".6"/>
-       <polygon points="188,92 196,95 188,98" fill="#756fd0" opacity=".6"/>
-       <polygon points="188,137 196,140 188,143" fill="#38b9c9" opacity=".6"/>
-       <polygon points="188,172 196,175 188,178" fill="#756fd0" opacity=".6"/>
-       <!-- Columna 1: Dimensiones -->
-       <rect x="196" y="36" width="64" height="36" rx="7" fill="#0d1020" stroke="#38b9c9" stroke-width="1.5"/>
-       <text x="228" y="58" text-anchor="middle" fill="#38b9c9" font-size="7" font-weight="bold" font-family="Inter,sans-serif">DIMENSIÓN</text>
-       <rect x="196" y="78" width="64" height="36" rx="7" fill="#0d1020" stroke="#38b9c9" stroke-width="1.5"/>
-       <text x="228" y="100" text-anchor="middle" fill="#38b9c9" font-size="7" font-weight="bold" font-family="Inter,sans-serif">DIMENSIÓN</text>
-       <rect x="196" y="122" width="64" height="36" rx="7" fill="#0d1020" stroke="#756fd0" stroke-width="1.5"/>
-       <text x="228" y="144" text-anchor="middle" fill="#958be4" font-size="7" font-weight="bold" font-family="Inter,sans-serif">DIMENSIÓN</text>
-       <rect x="196" y="164" width="64" height="36" rx="7" fill="#0d1020" stroke="#756fd0" stroke-width="1.5"/>
-       <text x="228" y="186" text-anchor="middle" fill="#958be4" font-size="7" font-weight="bold" font-family="Inter,sans-serif">DIMENSIÓN</text>
-       <!-- Flechas dim→ind -->
-       <line x1="262" y1="54" x2="292" y2="54" stroke="#38b9c9" stroke-width="1.2" opacity=".45"/>
-       <line x1="262" y1="96" x2="292" y2="96" stroke="#38b9c9" stroke-width="1.2" opacity=".45"/>
-       <line x1="262" y1="140" x2="292" y2="140" stroke="#756fd0" stroke-width="1.2" opacity=".45"/>
-       <line x1="262" y1="182" x2="292" y2="182" stroke="#756fd0" stroke-width="1.2" opacity=".45"/>
-       <!-- Columna 2: Indicadores -->
-       <rect x="296" y="36" width="60" height="36" rx="7" fill="#0d1020" stroke="#38b9c9" stroke-width="1.5"/>
-       <text x="326" y="58" text-anchor="middle" fill="#38b9c9" font-size="7" font-weight="bold" font-family="Inter,sans-serif">INDICADOR</text>
-       <rect x="296" y="78" width="60" height="36" rx="7" fill="#0d1020" stroke="#38b9c9" stroke-width="1.5"/>
-       <text x="326" y="100" text-anchor="middle" fill="#38b9c9" font-size="7" font-weight="bold" font-family="Inter,sans-serif">INDICADOR</text>
-       <rect x="296" y="122" width="60" height="36" rx="7" fill="#0d1020" stroke="#756fd0" stroke-width="1.5"/>
-       <text x="326" y="144" text-anchor="middle" fill="#958be4" font-size="7" font-weight="bold" font-family="Inter,sans-serif">INDICADOR</text>
-       <rect x="296" y="164" width="60" height="36" rx="7" fill="#0d1020" stroke="#756fd0" stroke-width="1.5"/>
-       <text x="326" y="186" text-anchor="middle" fill="#958be4" font-size="7" font-weight="bold" font-family="Inter,sans-serif">INDICADOR</text>
-       <!-- Columna 3: Escala -->
-       <rect x="366" y="36" width="40" height="36" rx="7" fill="#756fd0" fill-opacity=".15" stroke="#756fd0" stroke-width="1.2"/>
-       <text x="386" y="58" text-anchor="middle" fill="#958be4" font-size="6.5" font-weight="bold" font-family="Inter,sans-serif">ESCALA</text>
-       <rect x="366" y="78" width="40" height="36" rx="7" fill="#756fd0" fill-opacity=".15" stroke="#756fd0" stroke-width="1.2"/>
-       <text x="386" y="100" text-anchor="middle" fill="#958be4" font-size="6.5" font-weight="bold" font-family="Inter,sans-serif">ESCALA</text>
-       <rect x="366" y="122" width="40" height="36" rx="7" fill="#38b9c9" fill-opacity=".12" stroke="#38b9c9" stroke-width="1.2"/>
-       <text x="386" y="144" text-anchor="middle" fill="#38b9c9" font-size="6.5" font-weight="bold" font-family="Inter,sans-serif">ESCALA</text>
-       <rect x="366" y="164" width="40" height="36" rx="7" fill="#38b9c9" fill-opacity=".12" stroke="#38b9c9" stroke-width="1.2"/>
-       <text x="386" y="186" text-anchor="middle" fill="#38b9c9" font-size="6.5" font-weight="bold" font-family="Inter,sans-serif">ESCALA</text>
-       <!-- Flechas ind→esc -->
-       <line x1="358" y1="54" x2="364" y2="54" stroke="#756fd0" stroke-width="1" opacity=".4"/>
-       <line x1="358" y1="96" x2="364" y2="96" stroke="#756fd0" stroke-width="1" opacity=".4"/>
-       <line x1="358" y1="140" x2="364" y2="140" stroke="#38b9c9" stroke-width="1" opacity=".4"/>
-       <line x1="358" y1="182" x2="364" y2="182" stroke="#38b9c9" stroke-width="1" opacity=".4"/>
-       <!-- Décor flotante -->
-       <circle cx="16" cy="28" r="3.5" fill="#756fd0" opacity=".4"/>
-       <circle cx="408" cy="205" r="3" fill="#38b9c9" opacity=".35"/>
-       <rect x="400" y="24" width="5" height="5" rx="1" fill="#38b9c9" opacity=".3" transform="rotate(45 402.5 26.5)"/>
-       <rect x="8" cy="200" width="4" height="4" rx="1" fill="#756fd0" opacity=".3" transform="rotate(45 10 202)"/>
-      </svg>
-      <span class="blog-card-tag">Herramienta metodológica</span>
-     </div>
-     <div class="blog-card-body">
-      <time datetime="2026-07-25">25 de julio, 2026</time>
-      <h3>Matriz de Operacionalización de Variables</h3>
-      <p>Cómo transformar conceptos abstractos en indicadores medibles y construir la columna vertebral de tu investigación cuantitativa.</p>
-      <span class="blog-card-read">Leer artículo <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-     </div>
-     </a>
-
-   <!-- CARD: Enfoques de Investigacion -->
-    <a href="blog-enfoques-investigacion.html" class="blog-card reveal">
-     <div class="blog-card-img">
-      <svg viewBox="0 0 420 220" fill="none" xmlns="http://www.w3.org/2000/svg">
-       <defs>
-        <linearGradient id="cbg3" x1="0" y1="0" x2="420" y2="220">
-         <stop stop-color="#0a0e1a"/>
-         <stop offset=".35" stop-color="#141836"/>
-         <stop offset=".7" stop-color="#1a1048"/>
-         <stop offset="1" stop-color="#0c1828"/>
-        </linearGradient>
-        <radialGradient id="halo3" cx="50%" cy="50%" r="50%">
-         <stop stop-color="#38b9c9" stop-opacity=".15"/>
-         <stop offset="1" stop-color="#38b9c9" stop-opacity="0"/>
-        </radialGradient>
-       </defs>
-       <rect width="420" height="220" fill="url(#cbg3)"/>
-       <ellipse cx="210" cy="110" rx="160" ry="100" fill="url(#halo3)"/>
-       <!-- Nodo central: ENFOQUES -->
-       <circle cx="210" cy="100" r="24" fill="#0d1020" stroke="#756fd0" stroke-width="2.5"/>
-       <circle cx="210" cy="100" r="14" fill="#756fd0" opacity=".5"/>
-       <circle cx="210" cy="100" r="28" fill="none" stroke="#38b9c9" stroke-width="1" opacity=".3"/>
-       <text x="210" y="96" text-anchor="middle" fill="#fff" font-size="7.5" font-weight="bold" font-family="Inter,sans-serif">ENFOQUES</text>
-       <text x="210" y="108" text-anchor="middle" fill="#fff" font-size="6.5" font-family="Inter,sans-serif" opacity=".7">de investigación</text>
-       <!-- Rama izquierda: CUANTITATIVO -->
-       <line x1="186" y1="88" x2="105" y2="60" stroke="#38b9c9" stroke-width="2" opacity=".6"/>
-       <rect x="38" y="40" width="130" height="40" rx="9" fill="#0d1020" stroke="#38b9c9" stroke-width="2"/>
-       <text x="103" y="57" text-anchor="middle" fill="#38b9c9" font-size="8.5" font-weight="bold" font-family="Inter,sans-serif">CUANTITATIVO</text>
-       <text x="103" y="70" text-anchor="middle" fill="#626b7f" font-size="6.5" font-family="Inter,sans-serif">Números · Datos · Pruebas</text>
-       <!-- Rama derecha: CUALITATIVO -->
-       <line x1="234" y1="88" x2="315" y2="60" stroke="#756fd0" stroke-width="2" opacity=".6"/>
-       <rect x="252" y="40" width="130" height="40" rx="9" fill="#0d1020" stroke="#756fd0" stroke-width="2"/>
-       <text x="317" y="57" text-anchor="middle" fill="#958be4" font-size="8.5" font-weight="bold" font-family="Inter,sans-serif">CUALITATIVO</text>
-       <text x="317" y="70" text-anchor="middle" fill="#626b7f" font-size="6.5" font-family="Inter,sans-serif">Palabras · Significados · Textos</text>
-       <!-- Rama inferior: MIXTO -->
-       <line x1="210" y1="124" x2="210" y2="168" stroke="#38b9c9" stroke-width="2" opacity=".6"/>
-       <rect x="140" y="168" width="140" height="40" rx="9" fill="#0d1020" stroke="#38b9c9" stroke-width="2" stroke-dasharray="4 3"/>
-       <text x="210" y="185" text-anchor="middle" fill="#38b9c9" font-size="8.5" font-weight="bold" font-family="Inter,sans-serif">MIXTO</text>
-       <text x="210" y="198" text-anchor="middle" fill="#626b7f" font-size="6.5" font-family="Inter,sans-serif">Integración de ambos</text>
-       <!-- Décor flotante -->
-       <circle cx="20" cy="28" r="3" fill="#38b9c9" opacity=".45"/>
-       <circle cx="400" cy="35" r="3.5" fill="#756fd0" opacity=".4"/>
-       <circle cx="30" cy="195" r="2.5" fill="#756fd0" opacity=".35"/>
-       <circle cx="395" cy="200" r="3" fill="#38b9c9" opacity=".3"/>
-       <rect x="380" y="155" width="4" height="4" rx="1" fill="#38b9c9" opacity=".3" transform="rotate(45 382 157)"/>
-       <rect x="25" y="130" width="3.5" height="3.5" rx="1" fill="#756fd0" opacity=".3" transform="rotate(45 26.75 131.75)"/>
-      </svg>
-      <span class="blog-card-tag">Metodologia de la investigacion</span>
-     </div>
-     <div class="blog-card-body">
-      <time datetime="2026-07-30">30 de julio, 2026</time>
-      <h3>Enfoques de Investigación</h3>
-      <p>Cuantitativo, cualitativo y mixto: conoce sus diferencias, fortalezas y como elegir el enfoque adecuado para tu estudio.</p>
-      <span class="blog-card-read">Leer articulo <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-     </div>
-    </a>
-
-   <!-- CARD: Objetivos de Investigacion -->
-    <a href="blog-objetivos-investigacion.html" class="blog-card reveal">
-     <div class="blog-card-img">
-       <svg viewBox="0 0 420 220" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <defs>
-         <linearGradient id="cbg4" x1="0" y1="0" x2="420" y2="220">
-          <stop stop-color="#0a0e1a"/>
-         <stop offset=".35" stop-color="#141836"/>
-         <stop offset=".7" stop-color="#1a1048"/>
-         <stop offset="1" stop-color="#0c1828"/>
-        </linearGradient>
-       </defs>
-       <rect width="420" height="220" fill="url(#cbg4)"/>
-       <rect x="118" y="34" width="184" height="42" rx="10" fill="#0d1020" stroke="#38b9c9" stroke-width="2"/>
-       <text x="210" y="60" text-anchor="middle" fill="#38b9c9" font-size="9" font-weight="bold" font-family="Inter,sans-serif">OBJETIVO GENERAL</text>
-       <line x1="210" y1="76" x2="210" y2="108" stroke="#38b9c9" stroke-width="2" opacity=".65"/>
-       <line x1="210" y1="108" x2="95" y2="108" stroke="#756fd0" stroke-width="2" opacity=".55"/>
-       <line x1="210" y1="108" x2="210" y2="108" stroke="#756fd0" stroke-width="2" opacity=".55"/>
-       <line x1="210" y1="108" x2="325" y2="108" stroke="#756fd0" stroke-width="2" opacity=".55"/>
-       <line x1="95" y1="108" x2="95" y2="138" stroke="#756fd0" stroke-width="2" opacity=".55"/>
-       <line x1="210" y1="108" x2="210" y2="138" stroke="#756fd0" stroke-width="2" opacity=".55"/>
-       <line x1="325" y1="108" x2="325" y2="138" stroke="#756fd0" stroke-width="2" opacity=".55"/>
-       <rect x="42" y="138" width="106" height="36" rx="9" fill="#0d1020" stroke="#756fd0" stroke-width="1.8"/>
-       <text x="95" y="160" text-anchor="middle" fill="#958be4" font-size="7.5" font-weight="bold" font-family="Inter,sans-serif">OBJETIVO 1</text>
-       <rect x="157" y="138" width="106" height="36" rx="9" fill="#0d1020" stroke="#38b9c9" stroke-width="1.8"/>
-       <text x="210" y="160" text-anchor="middle" fill="#38b9c9" font-size="7.5" font-weight="bold" font-family="Inter,sans-serif">OBJETIVO 2</text>
-        <rect x="272" y="138" width="106" height="36" rx="9" fill="#0d1020" stroke="#756fd0" stroke-width="1.8"/>
-        <text x="325" y="160" text-anchor="middle" fill="#958be4" font-size="7.5" font-weight="bold" font-family="Inter,sans-serif">OBJETIVO 3</text>
-       </svg>
-      <span class="blog-card-tag">Metodologia de la investigacion</span>
-     </div>
-     <div class="blog-card-body">
-      <time datetime="2026-08-13">13 de agosto, 2026</time>
-      <h3>Objetivos de Investigacion</h3>
-      <p>Aprende a redactar objetivos generales y especificos claros, coherentes y viables para orientar tu investigacion desde el problema hasta el analisis.</p>
-      <span class="blog-card-read">Leer articulo <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-     </div>
-    </a>
-
-    <!-- CARD: Formulacion del problema -->
-     <a href="blog-formulacion-problema.html" class="blog-card reveal">
-      <div class="blog-card-img">
-      <svg viewBox="0 0 420 220" fill="none" xmlns="http://www.w3.org/2000/svg">
-       <defs>
-        <linearGradient id="cbg5" x1="0" y1="0" x2="420" y2="220">
-         <stop stop-color="#0a0e1a"/>
-         <stop offset=".35" stop-color="#141836"/>
-         <stop offset=".7" stop-color="#1a1048"/>
-         <stop offset="1" stop-color="#0c1828"/>
-        </linearGradient>
-       </defs>
-       <rect width="420" height="220" fill="url(#cbg5)"/>
-       <rect x="95" y="30" width="230" height="42" rx="10" fill="#0d1020" stroke="#38b9c9" stroke-width="2"/>
-       <text x="210" y="56" text-anchor="middle" fill="#38b9c9" font-size="8.5" font-weight="bold" font-family="Inter,sans-serif">FORMULACION DEL PROBLEMA</text>
-       <line x1="210" y1="72" x2="210" y2="102" stroke="#38b9c9" stroke-width="2" opacity=".65"/>
-       <rect x="70" y="102" width="280" height="48" rx="10" fill="#0d1020" stroke="#756fd0" stroke-width="1.8"/>
-       <text x="210" y="124" text-anchor="middle" fill="#958be4" font-size="8" font-weight="bold" font-family="Inter,sans-serif">QUE SITUACION NECESITA EXPLICACION?</text>
-       <text x="210" y="138" text-anchor="middle" fill="#626b7f" font-size="6.5" font-family="Inter,sans-serif">pregunta central, contexto y delimitacion</text>
-       <line x1="210" y1="150" x2="120" y2="182" stroke="#756fd0" stroke-width="2" opacity=".5"/>
-       <line x1="210" y1="150" x2="210" y2="182" stroke="#38b9c9" stroke-width="2" opacity=".5"/>
-       <line x1="210" y1="150" x2="300" y2="182" stroke="#756fd0" stroke-width="2" opacity=".5"/>
-       <circle cx="120" cy="182" r="12" fill="#0d1020" stroke="#756fd0" stroke-width="1.6"/>
-       <circle cx="210" cy="182" r="12" fill="#0d1020" stroke="#38b9c9" stroke-width="1.6"/>
-       <circle cx="300" cy="182" r="12" fill="#0d1020" stroke="#756fd0" stroke-width="1.6"/>
-       <text x="120" y="186" text-anchor="middle" fill="#958be4" font-size="7" font-weight="bold" font-family="Inter,sans-serif">QUE?</text>
-       <text x="210" y="186" text-anchor="middle" fill="#38b9c9" font-size="7" font-weight="bold" font-family="Inter,sans-serif">POR QUE?</text>
-       <text x="300" y="186" text-anchor="middle" fill="#958be4" font-size="7" font-weight="bold" font-family="Inter,sans-serif">DONDE?</text>
-      </svg>
-       <span class="blog-card-tag">Metodologia de la investigacion</span>
-      </div>
-      <div class="blog-card-body">
-       <time datetime="2026-08-26">26 de agosto, 2026</time>
-       <h3>La Formulacion del Problema</h3>
-       <p>Aprende a convertir un tema amplio en una pregunta de investigacion clara, delimitada y coherente con los objetivos y el metodo.</p>
-       <span class="blog-card-read">Leer articulo <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-      </div>
-     </a>
-
-    <!-- CARD: Proximamente - Que es una hipotesis -->
-     <div class="blog-card blog-card-coming reveal">
+    <!-- CARD: Marco Teorico -->
+     <a href="blog-marcado-teorico.html" class="blog-card reveal">
       <div class="blog-card-img">
        <svg viewBox="0 0 420 220" fill="none" xmlns="http://www.w3.org/2000/svg">
         <defs>
@@ -384,31 +88,359 @@
          </linearGradient>
         </defs>
         <rect width="420" height="220" fill="url(#cbg6)"/>
-        <rect x="104" y="34" width="212" height="40" rx="10" fill="#0d1020" stroke="#38b9c9" stroke-width="2"/>
-        <text x="210" y="58" text-anchor="middle" fill="#38b9c9" font-size="8.5" font-weight="bold" font-family="Inter,sans-serif">QUE ES UNA HIPOTESIS</text>
-        <line x1="210" y1="74" x2="210" y2="108" stroke="#38b9c9" stroke-width="2" opacity=".65"/>
-        <rect x="78" y="108" width="264" height="42" rx="10" fill="#0d1020" stroke="#756fd0" stroke-width="1.8"/>
-        <text x="210" y="133" text-anchor="middle" fill="#958be4" font-size="8" font-weight="bold" font-family="Inter,sans-serif">RESPUESTA TENTATIVA AL PROBLEMA</text>
-        <line x1="210" y1="150" x2="140" y2="182" stroke="#756fd0" stroke-width="2" opacity=".5"/>
-        <line x1="210" y1="150" x2="280" y2="182" stroke="#38b9c9" stroke-width="2" opacity=".5"/>
-        <circle cx="140" cy="182" r="12" fill="#0d1020" stroke="#756fd0" stroke-width="1.6"/>
-        <circle cx="280" cy="182" r="12" fill="#0d1020" stroke="#38b9c9" stroke-width="1.6"/>
-        <text x="140" y="186" text-anchor="middle" fill="#958be4" font-size="7" font-weight="bold" font-family="Inter,sans-serif">SI...</text>
-        <text x="280" y="186" text-anchor="middle" fill="#38b9c9" font-size="7" font-weight="bold" font-family="Inter,sans-serif">ENTONCES...</text>
+        <rect x="84" y="34" width="252" height="44" rx="10" fill="#0d1020" stroke="#756fd0" stroke-width="2"/>
+        <text x="210" y="61" text-anchor="middle" fill="#958be4" font-size="9.5" font-weight="bold" font-family="Inter,sans-serif">MARCANO TEORICO</text>
+        <line x1="210" y1="78" x2="210" y2="108" stroke="#756fd0" stroke-width="2" opacity=".65"/>
+        <rect x="68" y="108" width="284" height="44" rx="10" fill="#0d1020" stroke="#38b9c9" stroke-width="1.8"/>
+        <text x="210" y="128" text-anchor="middle" fill="#38b9c9" font-size="8.5" font-weight="bold" font-family="Inter,sans-serif">SUSTENTO ACADEMICO DE TU</text>
+        <text x="210" y="145" text-anchor="middle" fill="#38b9c9" font-size="8.5" font-weight="bold" font-family="Inter,sans-serif">INVESTIGACION</text>
+        <circle cx="38" cy="32" r="3" fill="#756fd0" opacity=".4"/>
+        <circle cx="385" cy="185" r="3" fill="#38b9c9" opacity=".35"/>
        </svg>
-       <span class="blog-card-tag">Proximamente</span>
+        <span class="blog-card-tag">Metodologia de la investigacion</span>
       </div>
       <div class="blog-card-body">
-       <time>Proximo articulo</time>
-       <h3>Que es una hipotesis</h3>
-       <p>Muy pronto: entiende cuando corresponde formular hipotesis, como redactarlas y que relacion guardan con el problema y las variables.</p>
-       <span class="blog-card-read">Proximamente</span>
+       <time datetime="2026-09-06">6 de septiembre, 2026</time>
+       <h3>Marco Teorico</h3>
+       <p>Descubre que es, para que sirve y como construir el marco teorico que fundamenta tus hipotesis con teorias, modelos y antecedentes academicos.</p>
+       <span class="blog-card-read">Leer articulo <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
       </div>
-     </div>
+     </a>
 
+    <!-- CARD: Formulacion del problema -->
+      <a href="blog-formulacion-problema.html" class="blog-card reveal">
+       <div class="blog-card-img">
+       <svg viewBox="0 0 420 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+         <linearGradient id="cbg5" x1="0" y1="0" x2="420" y2="220">
+          <stop stop-color="#0a0e1a"/>
+          <stop offset=".35" stop-color="#141836"/>
+          <stop offset=".7" stop-color="#1a1048"/>
+          <stop offset="1" stop-color="#0c1828"/>
+         </linearGradient>
+        </defs>
+        <rect width="420" height="220" fill="url(#cbg5)"/>
+        <rect x="95" y="30" width="230" height="42" rx="10" fill="#0d1020" stroke="#38b9c9" stroke-width="2"/>
+        <text x="210" y="56" text-anchor="middle" fill="#38b9c9" font-size="8.5" font-weight="bold" font-family="Inter,sans-serif">FORMULACION DEL PROBLEMA</text>
+        <line x1="210" y1="72" x2="210" y2="102" stroke="#38b9c9" stroke-width="2" opacity=".65"/>
+        <rect x="70" y="102" width="280" height="48" rx="10" fill="#0d1020" stroke="#756fd0" stroke-width="1.8"/>
+        <text x="210" y="124" text-anchor="middle" fill="#958be4" font-size="8" font-weight="bold" font-family="Inter,sans-serif">QUE SITUACION NECESITA EXPLICACION?</text>
+        <text x="210" y="138" text-anchor="middle" fill="#626b7f" font-size="6.5" font-family="Inter,sans-serif">pregunta central, contexto y delimitacion</text>
+        <line x1="210" y1="150" x2="120" y2="182" stroke="#756fd0" stroke-width="2" opacity=".5"/>
+        <line x1="210" y1="150" x2="210" y2="182" stroke="#38b9c9" stroke-width="2" opacity=".5"/>
+        <line x1="210" y1="150" x2="300" y2="182" stroke="#756fd0" stroke-width="2" opacity=".5"/>
+        <circle cx="120" cy="182" r="12" fill="#0d1020" stroke="#756fd0" stroke-width="1.6"/>
+        <circle cx="210" cy="182" r="12" fill="#0d1020" stroke="#38b9c9" stroke-width="1.6"/>
+        <circle cx="300" cy="182" r="12" fill="#0d1020" stroke="#756fd0" stroke-width="1.6"/>
+        <text x="120" y="186" text-anchor="middle" fill="#958be4" font-size="7" font-weight="bold" font-family="Inter,sans-serif">QUE?</text>
+        <text x="210" y="186" text-anchor="middle" fill="#38b9c9" font-size="7" font-weight="bold" font-family="Inter,sans-serif">POR QUE?</text>
+        <text x="300" y="186" text-anchor="middle" fill="#958be4" font-size="7" font-weight="bold" font-family="Inter,sans-serif">DONDE?</text>
+       </svg>
+        <span class="blog-card-tag">Metodologia de la investigacion</span>
+       </div>
+       <div class="blog-card-body">
+        <time datetime="2026-08-26">26 de agosto, 2026</time>
+        <h3>La Formulacion del Problema</h3>
+        <p>Aprende a convertir un tema amplio en una pregunta de investigacion clara, delimitada y coherente con los objetivos y el metodo.</p>
+        <span class="blog-card-read">Leer articulo <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+       </div>
+      </a>
+
+      <!-- CARD: Que es una hipotesis -->
+       <a href="blog-hipotesis.html" class="blog-card reveal">
+        <div class="blog-card-img">
+        <svg viewBox="0 0 420 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+         <defs>
+          <linearGradient id="cbg6" x1="0" y1="0" x2="420" y2="220">
+           <stop stop-color="#0a0e1a"/>
+           <stop offset=".35" stop-color="#141836"/>
+           <stop offset=".7" stop-color="#1a1048"/>
+           <stop offset="1" stop-color="#0c1828"/>
+          </linearGradient>
+         </defs>
+         <rect width="420" height="220" fill="url(#cbg6)"/>
+         <rect x="104" y="34" width="212" height="40" rx="10" fill="#0d1020" stroke="#38b9c9" stroke-width="2"/>
+         <text x="210" y="58" text-anchor="middle" fill="#38b9c9" font-size="8.5" font-weight="bold" font-family="Inter,sans-serif">QUE ES UNA HIPOTESIS</text>
+         <line x1="210" y1="74" x2="210" y2="108" stroke="#38b9c9" stroke-width="2" opacity=".65"/>
+         <rect x="78" y="108" width="264" height="42" rx="10" fill="#0d1020" stroke="#756fd0" stroke-width="1.8"/>
+         <text x="210" y="133" text-anchor="middle" fill="#958be4" font-size="8" font-weight="bold" font-family="Inter,sans-serif">RESPUESTA TENTATIVA AL PROBLEMA</text>
+         <line x1="210" y1="150" x2="140" y2="182" stroke="#756fd0" stroke-width="2" opacity=".5"/>
+         <line x1="210" y1="150" x2="280" y2="182" stroke="#38b9c9" stroke-width="2" opacity=".5"/>
+         <circle cx="140" cy="182" r="12" fill="#0d1020" stroke="#756fd0" stroke-width="1.6"/>
+         <circle cx="280" cy="182" r="12" fill="#0d1020" stroke="#38b9c9" stroke-width="1.6"/>
+         <text x="140" y="186" text-anchor="middle" fill="#958be4" font-size="7" font-weight="bold" font-family="Inter,sans-serif">SI...</text>
+         <text x="280" y="186" text-anchor="middle" fill="#38b9c9" font-size="7" font-weight="bold" font-family="Inter,sans-serif">ENTONCES...</text>
+        </svg>
+         <span class="blog-card-tag">Metodologia de la investigacion</span>
+        </div>
+        <div class="blog-card-body">
+         <time datetime="2026-08-20">20 de agosto, 2026</time>
+         <h3>Que es una Hipotesis</h3>
+         <p>Entiende cuando corresponde formular hipotesis, como redactarlas y que relacion guardan con el problema y las variables en tu proyecto de investigacion.</p>
+         <span class="blog-card-read">Leer articulo <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </div>
+       </a>
+
+    <!-- CARD: Objetivos de Investigacion -->
+     <a href="blog-objetivos-investigacion.html" class="blog-card reveal">
+      <div class="blog-card-img">
+        <svg viewBox="0 0 420 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+         <defs>
+          <linearGradient id="cbg4" x1="0" y1="0" x2="420" y2="220">
+           <stop stop-color="#0a0e1a"/>
+          <stop offset=".35" stop-color="#141836"/>
+          <stop offset=".7" stop-color="#1a1048"/>
+          <stop offset="1" stop-color="#0c1828"/>
+         </linearGradient>
+        </defs>
+        <rect width="420" height="220" fill="url(#cbg4)"/>
+        <rect x="118" y="34" width="184" height="42" rx="10" fill="#0d1020" stroke="#38b9c9" stroke-width="2"/>
+        <text x="210" y="60" text-anchor="middle" fill="#38b9c9" font-size="9" font-weight="bold" font-family="Inter,sans-serif">OBJETIVO GENERAL</text>
+        <line x1="210" y1="76" x2="210" y2="108" stroke="#38b9c9" stroke-width="2" opacity=".65"/>
+        <line x1="210" y1="108" x2="95" y2="108" stroke="#756fd0" stroke-width="2" opacity=".55"/>
+        <line x1="210" y1="108" x2="210" y2="108" stroke="#756fd0" stroke-width="2" opacity=".55"/>
+        <line x1="210" y1="108" x2="325" y2="108" stroke="#756fd0" stroke-width="2" opacity=".55"/>
+        <line x1="95" y1="108" x2="95" y2="138" stroke="#756fd0" stroke-width="2" opacity=".55"/>
+        <line x1="210" y1="108" x2="210" y2="138" stroke="#756fd0" stroke-width="2" opacity=".55"/>
+        <line x1="325" y1="108" x2="325" y2="138" stroke="#756fd0" stroke-width="2" opacity=".55"/>
+        <rect x="42" y="138" width="106" height="36" rx="9" fill="#0d1020" stroke="#756fd0" stroke-width="1.8"/>
+        <text x="95" y="160" text-anchor="middle" fill="#958be4" font-size="7.5" font-weight="bold" font-family="Inter,sans-serif">OBJETIVO 1</text>
+        <rect x="157" y="138" width="106" height="36" rx="9" fill="#0d1020" stroke="#38b9c9" stroke-width="1.8"/>
+        <text x="210" y="160" text-anchor="middle" fill="#38b9c9" font-size="7.5" font-weight="bold" font-family="Inter,sans-serif">OBJETIVO 2</text>
+         <rect x="272" y="138" width="106" height="36" rx="9" fill="#0d1020" stroke="#756fd0" stroke-width="1.8"/>
+         <text x="325" y="160" text-anchor="middle" fill="#958be4" font-size="7.5" font-weight="bold" font-family="Inter,sans-serif">OBJETIVO 3</text>
+        </svg>
+       <span class="blog-card-tag">Metodologia de la investigacion</span>
+      </div>
+      <div class="blog-card-body">
+       <time datetime="2026-08-13">13 de agosto, 2026</time>
+       <h3>Objetivos de Investigacion</h3>
+       <p>Aprende a redactar objetivos generales y especificos claros, coherentes y viables para orientar tu investigacion desde el problema hasta el analisis.</p>
+       <span class="blog-card-read">Leer articulo <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </div>
+     </a>
+
+    <!-- CARD: Enfoques de Investigacion -->
+     <a href="blog-enfoques-investigacion.html" class="blog-card reveal">
+      <div class="blog-card-img">
+       <svg viewBox="0 0 420 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+         <linearGradient id="cbg3" x1="0" y1="0" x2="420" y2="220">
+          <stop stop-color="#0a0e1a"/>
+          <stop offset=".35" stop-color="#141836"/>
+          <stop offset=".7" stop-color="#1a1048"/>
+          <stop offset="1" stop-color="#0c1828"/>
+         </linearGradient>
+         <radialGradient id="halo3" cx="50%" cy="50%" r="50%">
+          <stop stop-color="#38b9c9" stop-opacity=".15"/>
+          <stop offset="1" stop-color="#38b9c9" stop-opacity="0"/>
+         </radialGradient>
+        </defs>
+        <rect width="420" height="220" fill="url(#cbg3)"/>
+        <ellipse cx="210" cy="110" rx="160" ry="100" fill="url(#halo3)"/>
+        <!-- Nodo central: ENFOQUES -->
+        <circle cx="210" cy="100" r="24" fill="#0d1020" stroke="#756fd0" stroke-width="2.5"/>
+        <circle cx="210" cy="100" r="14" fill="#756fd0" opacity=".5"/>
+        <circle cx="210" cy="100" r="28" fill="none" stroke="#38b9c9" stroke-width="1" opacity=".3"/>
+        <text x="210" y="96" text-anchor="middle" fill="#fff" font-size="7.5" font-weight="bold" font-family="Inter,sans-serif">ENFOQUES</text>
+        <text x="210" y="108" text-anchor="middle" fill="#fff" font-size="6.5" font-family="Inter,sans-serif" opacity=".7">de investigación</text>
+        <!-- Rama izquierda: CUANTITATIVO -->
+        <line x1="186" y1="88" x2="105" y2="60" stroke="#38b9c9" stroke-width="2" opacity=".6"/>
+        <rect x="38" y="40" width="130" height="40" rx="9" fill="#0d1020" stroke="#38b9c9" stroke-width="2"/>
+        <text x="103" y="57" text-anchor="middle" fill="#38b9c9" font-size="8.5" font-weight="bold" font-family="Inter,sans-serif">CUANTITATIVO</text>
+        <text x="103" y="70" text-anchor="middle" fill="#626b7f" font-size="6.5" font-family="Inter,sans-serif">Números · Datos · Pruebas</text>
+        <!-- Rama derecha: CUALITATIVO -->
+        <line x1="234" y1="88" x2="315" y2="60" stroke="#756fd0" stroke-width="2" opacity=".6"/>
+        <rect x="252" y="40" width="130" height="40" rx="9" fill="#0d1020" stroke="#756fd0" stroke-width="2"/>
+        <text x="317" y="57" text-anchor="middle" fill="#958be4" font-size="8.5" font-weight="bold" font-family="Inter,sans-serif">CUALITATIVO</text>
+        <text x="317" y="70" text-anchor="middle" fill="#626b7f" font-size="6.5" font-family="Inter,sans-serif">Palabras · Significados · Textos</text>
+        <!-- Rama inferior: MIXTO -->
+        <line x1="210" y1="124" x2="210" y2="168" stroke="#38b9c9" stroke-width="2" opacity=".6"/>
+        <rect x="140" y="168" width="140" height="40" rx="9" fill="#0d1020" stroke="#38b9c9" stroke-width="2" stroke-dasharray="4 3"/>
+        <text x="210" y="185" text-anchor="middle" fill="#38b9c9" font-size="8.5" font-weight="bold" font-family="Inter,sans-serif">MIXTO</text>
+        <text x="210" y="198" text-anchor="middle" fill="#626b7f" font-size="6.5" font-family="Inter,sans-serif">Integración de ambos</text>
+        <!-- Décor flotante -->
+        <circle cx="20" cy="28" r="3" fill="#38b9c9" opacity=".45"/>
+        <circle cx="400" cy="35" r="3.5" fill="#756fd0" opacity=".4"/>
+        <circle cx="30" cy="195" r="2.5" fill="#756fd0" opacity=".35"/>
+        <circle cx="395" cy="200" r="3" fill="#38b9c9" opacity=".3"/>
+        <rect x="380" y="155" width="4" height="4" rx="1" fill="#38b9c9" opacity=".3" transform="rotate(45 382 157)"/>
+        <rect x="25" y="130" width="3.5" height="3.5" rx="1" fill="#756fd0" opacity=".3" transform="rotate(45 26.75 131.75)"/>
+       </svg>
+       <span class="blog-card-tag">Metodologia de la investigacion</span>
+      </div>
+      <div class="blog-card-body">
+       <time datetime="2026-07-30">30 de julio, 2026</time>
+       <h3>Enfoques de Investigación</h3>
+       <p>Cuantitativo, cualitativo y mixto: conoce sus diferencias, fortalezas y como elegir el enfoque adecuado para tu estudio.</p>
+       <span class="blog-card-read">Leer articulo <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </div>
+     </a>
+
+    <!-- CARD: Matriz de Operacionalización de Variables -->
+     <a href="blog-matriz-operacionalizacion-variables.html" class="blog-card reveal">
+      <div class="blog-card-img">
+       <svg viewBox="0 0 420 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+         <linearGradient id="cbg2" x1="0" y1="0" x2="420" y2="220">
+          <stop stop-color="#0a0e1a"/>
+          <stop offset=".3" stop-color="#141836"/>
+          <stop offset=".65" stop-color="#1a1048"/>
+          <stop offset="1" stop-color="#0c1828"/>
+         </linearGradient>
+         <linearGradient id="flow2" x1="80" y1="110" x2="400" y2="110">
+          <stop stop-color="#38b9c9"/>
+          <stop offset=".5" stop-color="#756fd0"/>
+          <stop offset="1" stop-color="#38b9c9"/>
+         </linearGradient>
+         <radialGradient id="halo2" cx="18%" cy="50%" r="35%">
+          <stop stop-color="#756fd0" stop-opacity=".2"/>
+          <stop offset="1" stop-color="#756fd0" stop-opacity="0"/>
+         </radialGradient>
+        </defs>
+        <rect width="420" height="220" fill="url(#cbg2)"/>
+        <ellipse cx="100" cy="110" rx="120" ry="90" fill="url(#halo2)"/>
+        <!-- Variable central (bloque grande izquierda) -->
+        <rect x="28" y="68" width="100" height="84" rx="12" fill="#0d1020" stroke="#756fd0" stroke-width="2.2"/>
+        <text x="78" y="106" text-anchor="middle" fill="#958be4" font-size="9" font-weight="bold" font-family="Inter,sans-serif">VARIABLE</text>
+        <text x="78" y="122" text-anchor="middle" fill="#756fd0" font-size="7" font-family="Inter,sans-serif" opacity=".7">teórica</text>
+        <!-- Flechas de flujo -->
+        <path d="M130 85 L190 55" stroke="#38b9c9" stroke-width="1.8" opacity=".6" stroke-linecap="round"/>
+        <path d="M130 95 L190 95" stroke="#756fd0" stroke-width="1.8" opacity=".6" stroke-linecap="round"/>
+        <path d="M130 105 L190 140" stroke="#38b9c9" stroke-width="1.8" opacity=".6" stroke-linecap="round"/>
+        <path d="M130 115 L190 175" stroke="#756fd0" stroke-width="1.8" opacity=".6" stroke-linecap="round"/>
+        <!-- Flechas: puntas -->
+        <polygon points="188,52 196,55 188,58" fill="#38b9c9" opacity=".6"/>
+        <polygon points="188,92 196,95 188,98" fill="#756fd0" opacity=".6"/>
+        <polygon points="188,137 196,140 188,143" fill="#38b9c9" opacity=".6"/>
+        <polygon points="188,172 196,175 188,178" fill="#756fd0" opacity=".6"/>
+        <!-- Columna 1: Dimensiones -->
+        <rect x="196" y="36" width="64" height="36" rx="7" fill="#0d1020" stroke="#38b9c9" stroke-width="1.5"/>
+        <text x="228" y="58" text-anchor="middle" fill="#38b9c9" font-size="7" font-weight="bold" font-family="Inter,sans-serif">DIMENSIÓN</text>
+        <rect x="196" y="78" width="64" height="36" rx="7" fill="#0d1020" stroke="#38b9c9" stroke-width="1.5"/>
+        <text x="228" y="100" text-anchor="middle" fill="#38b9c9" font-size="7" font-weight="bold" font-family="Inter,sans-serif">DIMENSIÓN</text>
+        <rect x="196" y="122" width="64" height="36" rx="7" fill="#0d1020" stroke="#756fd0" stroke-width="1.5"/>
+        <text x="228" y="144" text-anchor="middle" fill="#958be4" font-size="7" font-weight="bold" font-family="Inter,sans-serif">DIMENSIÓN</text>
+        <rect x="196" y="164" width="64" height="36" rx="7" fill="#0d1020" stroke="#756fd0" stroke-width="1.5"/>
+        <text x="228" y="186" text-anchor="middle" fill="#958be4" font-size="7" font-weight="bold" font-family="Inter,sans-serif">DIMENSIÓN</text>
+        <!-- Flechas dim→ind -->
+        <line x1="262" y1="54" x2="292" y2="54" stroke="#38b9c9" stroke-width="1.2" opacity=".45"/>
+        <line x1="262" y1="96" x2="292" y2="96" stroke="#38b9c9" stroke-width="1.2" opacity=".45"/>
+        <line x1="262" y1="140" x2="292" y2="140" stroke="#756fd0" stroke-width="1.2" opacity=".45"/>
+        <line x1="262" y1="182" x2="292" y2="182" stroke="#756fd0" stroke-width="1.2" opacity=".45"/>
+        <!-- Columna 2: Indicadores -->
+        <rect x="296" y="36" width="60" height="36" rx="7" fill="#0d1020" stroke="#38b9c9" stroke-width="1.5"/>
+        <text x="326" y="58" text-anchor="middle" fill="#38b9c9" font-size="7" font-weight="bold" font-family="Inter,sans-serif">INDICADOR</text>
+        <rect x="296" y="78" width="60" height="36" rx="7" fill="#0d1020" stroke="#38b9c9" stroke-width="1.5"/>
+        <text x="326" y="100" text-anchor="middle" fill="#38b9c9" font-size="7" font-weight="bold" font-family="Inter,sans-serif">INDICADOR</text>
+        <rect x="296" y="122" width="60" height="36" rx="7" fill="#0d1020" stroke="#756fd0" stroke-width="1.5"/>
+        <text x="326" y="144" text-anchor="middle" fill="#958be4" font-size="7" font-weight="bold" font-family="Inter,sans-serif">INDICADOR</text>
+        <rect x="296" y="164" width="60" height="36" rx="7" fill="#0d1020" stroke="#756fd0" stroke-width="1.5"/>
+        <text x="326" y="186" text-anchor="middle" fill="#958be4" font-size="7" font-weight="bold" font-family="Inter,sans-serif">INDICADOR</text>
+        <!-- Columna 3: Escala -->
+        <rect x="366" y="36" width="40" height="36" rx="7" fill="#756fd0" fill-opacity=".15" stroke="#756fd0" stroke-width="1.2"/>
+        <text x="386" y="58" text-anchor="middle" fill="#958be4" font-size="6.5" font-weight="bold" font-family="Inter,sans-serif">ESCALA</text>
+        <rect x="366" y="78" width="40" height="36" rx="7" fill="#756fd0" fill-opacity=".15" stroke="#756fd0" stroke-width="1.2"/>
+        <text x="386" y="100" text-anchor="middle" fill="#958be4" font-size="6.5" font-weight="bold" font-family="Inter,sans-serif">ESCALA</text>
+        <rect x="366" y="122" width="40" height="36" rx="7" fill="#38b9c9" fill-opacity=".12" stroke="#38b9c9" stroke-width="1.2"/>
+        <text x="386" y="144" text-anchor="middle" fill="#38b9c9" font-size="6.5" font-weight="bold" font-family="Inter,sans-serif">ESCALA</text>
+        <rect x="366" y="164" width="40" height="36" rx="7" fill="#38b9c9" fill-opacity=".12" stroke="#38b9c9" stroke-width="1.2"/>
+        <text x="386" y="186" text-anchor="middle" fill="#38b9c9" font-size="6.5" font-weight="bold" font-family="Inter,sans-serif">ESCALA</text>
+        <!-- Flechas ind→esc -->
+        <line x1="358" y1="54" x2="364" y2="54" stroke="#756fd0" stroke-width="1" opacity=".4"/>
+        <line x1="358" y1="96" x2="364" y2="96" stroke="#756fd0" stroke-width="1" opacity=".4"/>
+        <line x1="358" y1="140" x2="364" y2="140" stroke="#38b9c9" stroke-width="1" opacity=".4"/>
+        <line x1="358" y1="182" x2="364" y2="182" stroke="#38b9c9" stroke-width="1" opacity=".4"/>
+        <!-- Décor flotante -->
+        <circle cx="16" cy="28" r="3.5" fill="#756fd0" opacity=".4"/>
+        <circle cx="408" cy="205" r="3" fill="#38b9c9" opacity=".35"/>
+        <rect x="400" y="24" width="5" height="5" rx="1" fill="#38b9c9" opacity=".3" transform="rotate(45 402.5 26.5)"/>
+        <rect x="8" cy="200" width="4" height="4" rx="1" fill="#756fd0" opacity=".3" transform="rotate(45 10 202)"/>
+       </svg>
+       <span class="blog-card-tag">Herramienta metodológica</span>
+      </div>
+      <div class="blog-card-body">
+       <time datetime="2026-07-25">25 de julio, 2026</time>
+       <h3>Matriz de Operacionalización de Variables</h3>
+       <p>Cómo transformar conceptos abstractos en indicadores medibles y construir la columna vertebral de tu investigación cuantitativa.</p>
+       <span class="blog-card-read">Leer artículo <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </div>
+      </a>
+
+    <!-- CARD: Matriz de Consistencia -->
+    <a href="blog-matriz-consistencia.html" class="blog-card reveal">
+      <div class="blog-card-img">
+       <svg viewBox="0 0 420 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+         <linearGradient id="cbg1" x1="0" y1="0" x2="420" y2="220">
+          <stop stop-color="#0a0e1a"/>
+          <stop offset=".35" stop-color="#141836"/>
+          <stop offset=".7" stop-color="#1a1048"/>
+          <stop offset="1" stop-color="#0c1828"/>
+         </linearGradient>
+         <linearGradient id="glow1" x1="140" y1="60" x2="280" y2="180">
+          <stop stop-color="#38b9c9"/>
+          <stop offset="1" stop-color="#756fd0"/>
+         </linearGradient>
+         <radialGradient id="halo1" cx="50%" cy="50%" r="50%">
+          <stop stop-color="#38b9c9" stop-opacity=".18"/>
+          <stop offset="1" stop-color="#38b9c9" stop-opacity="0"/>
+         </radialGradient>
+        </defs>
+        <rect width="420" height="220" fill="url(#cbg1)"/>
+        <!-- Halo central -->
+        <ellipse cx="210" cy="110" rx="130" ry="100" fill="url(#halo1)"/>
+        <!-- Líneas de conexión entre nodos -->
+        <line x1="210" y1="55" x2="95" y2="120" stroke="url(#glow1)" stroke-width="2" opacity=".55"/>
+        <line x1="210" y1="55" x2="325" y2="120" stroke="url(#glow1)" stroke-width="2" opacity=".55"/>
+        <line x1="95" y1="120" x2="140" y2="190" stroke="url(#glow1)" stroke-width="2" opacity=".45"/>
+        <line x1="325" y1="120" x2="280" y2="190" stroke="url(#glow1)" stroke-width="2" opacity=".45"/>
+        <line x1="140" y1="190" x2="280" y2="190" stroke="url(#glow1)" stroke-width="2" opacity=".45"/>
+        <line x1="95" y1="120" x2="325" y2="120" stroke="#756fd0" stroke-width="1.5" opacity=".3" stroke-dasharray="6 4"/>
+        <line x1="140" y1="190" x2="210" y2="55" stroke="#38b9c9" stroke-width="1" opacity=".2" stroke-dasharray="4 4"/>
+        <line x1="280" y1="190" x2="210" y2="55" stroke="#38b9c9" stroke-width="1" opacity=".2" stroke-dasharray="4 4"/>
+        <!-- Nodo central (hub) -->
+        <circle cx="210" cy="110" r="18" fill="#0d1020" stroke="#756fd0" stroke-width="2" opacity=".9"/>
+        <circle cx="210" cy="110" r="10" fill="url(#glow1)" opacity=".7"/>
+        <circle cx="210" cy="110" r="22" fill="none" stroke="#38b9c9" stroke-width="1" opacity=".3"/>
+        <!-- Nodo 1: Problema (arriba) -->
+        <rect x="182" y="38" width="56" height="34" rx="8" fill="#0d1020" stroke="#38b9c9" stroke-width="1.8"/>
+        <text x="210" y="59" text-anchor="middle" fill="#38b9c9" font-size="8" font-weight="bold" font-family="Inter,sans-serif">PROBLEMA</text>
+        <!-- Nodo 2: Objetivos (izq) -->
+        <rect x="52" y="103" width="86" height="34" rx="8" fill="#0d1020" stroke="#38b9c9" stroke-width="1.8"/>
+        <text x="95" y="124" text-anchor="middle" fill="#38b9c9" font-size="8" font-weight="bold" font-family="Inter,sans-serif">OBJETIVOS</text>
+        <!-- Nodo 3: Hipótesis (der) -->
+        <rect x="282" y="103" width="86" height="34" rx="8" fill="#0d1020" stroke="#756fd0" stroke-width="1.8"/>
+        <text x="325" y="124" text-anchor="middle" fill="#958be4" font-size="8" font-weight="bold" font-family="Inter,sans-serif">HIPÓTESIS</text>
+        <!-- Nodo 4: Variables (izq-abajo) -->
+        <rect x="100" y="173" width="80" height="34" rx="8" fill="#0d1020" stroke="#756fd0" stroke-width="1.8"/>
+        <text x="140" y="194" text-anchor="middle" fill="#958be4" font-size="8" font-weight="bold" font-family="Inter,sans-serif">VARIABLES</text>
+        <!-- Nodo 5: Metodología (der-abajo) -->
+        <rect x="240" y="173" width="80" height="34" rx="8" fill="#0d1020" stroke="#38b9c9" stroke-width="1.8"/>
+        <text x="280" y="194" text-anchor="middle" fill="#38b9c9" font-size="8" font-weight="bold" font-family="Inter,sans-serif">METODOLOGÍA</text>
+        <!-- Décor: pontos flotantes -->
+        <circle cx="38" cy="32" r="3" fill="#38b9c9" opacity=".5"/>
+        <circle cx="390" cy="50" r="4" fill="#756fd0" opacity=".4"/>
+        <circle cx="30" cy="195" r="2.5" fill="#756fd0" opacity=".35"/>
+        <circle cx="400" cy="200" r="3" fill="#38b9c9" opacity=".3"/>
+        <circle cx="350" cy="35" r="2" fill="#38b9c9" opacity=".4"/>
+        <!-- Décor: tiny diamonds -->
+        <rect x="52" y="40" width="5" height="5" rx="1" fill="#38b9c9" opacity=".3" transform="rotate(45 54.5 42.5)"/>
+        <rect x="365" y="180" width="4" height="4" rx="1" fill="#756fd0" opacity=".3" transform="rotate(45 367 182)"/>
+       </svg>
+       <span class="blog-card-tag">Herramienta metodológica</span>
+      </div>
+      <div class="blog-card-body">
+       <time datetime="2026-07-24">24 de julio, 2026</time>
+       <h3>La Matriz de Consistencia</h3>
+       <p>Descubre cómo esta herramienta te permite visualizar y verificar la coherencia lógica entre todos los elementos de tu proyecto de investigación.</p>
+       <span class="blog-card-read">Leer artículo <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </div>
+     </a>
+
+   </div>
   </div>
- </div>
-</section>
+ </section>
 </main>
 
 <footer>

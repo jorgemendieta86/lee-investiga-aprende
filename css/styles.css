@@ -223,7 +223,6 @@ footer{padding:28px 0 34px;border-top:1px solid var(--line)}
 .blog-card-read{display:inline-flex;align-items:center;gap:6px;color:var(--cyan);font-size:.88rem;font-weight:800}
 .blog-card-read svg{transition:.2s}
 .blog-card:hover .blog-card-read svg{transform:translateX(4px)}
-.blog-card-coming{opacity:.7;pointer-events:none}
 
 /* ===== ARTICLE PAGE STYLES ===== */
 
@@ -256,6 +255,20 @@ footer{padding:28px 0 34px;border-top:1px solid var(--line)}
 .article-highlight{display:flex;gap:16px;padding:20px 22px;border-radius:var(--radius-md);background:var(--cyan-soft);border:1px solid color-mix(in srgb,var(--cyan) 25%,var(--line));margin:0 0 24px}
 .highlight-icon{flex-shrink:0;width:42px;height:42px;border-radius:12px;display:grid;place-items:center;color:var(--cyan);background:var(--surface-solid);border:1px solid var(--line)}
 .article-highlight p{margin:0;color:var(--text);font-size:.92rem;line-height:1.65;font-style:italic}
+
+/* Article Highlight Card (Proximamente) */
+.article-highlight-card{margin:30px 0;border:1px solid var(--line);box-shadow:var(--shadow-soft);border-radius:0;overflow:hidden}
+.article-highlight-card .highlight-card-visual{position:relative;overflow:hidden}
+.article-highlight-card .highlight-card-visual .mt-banner{background:linear-gradient(135deg,#0a0e1a,#141836,#1a1048);padding:28px 32px;text-align:center}
+.article-highlight-card .highlight-card-visual .mt-banner-tag{display:inline-block;margin-bottom:12px;padding:5px 18px;border-radius:20px;background:#756fd0;color:#fff;font-size:.75rem;font-weight:900;letter-spacing:.1em}
+.article-highlight-card .highlight-card-visual .mt-banner-title{font-size:2rem;font-weight:900;color:#38b9c9;font-family:'Inter',sans-serif;letter-spacing:.15em;margin-bottom:12px}
+.article-highlight-card .highlight-card-visual .mt-banner-desc{font-size:.95rem;color:#e0e4f0;font-family:'Inter',sans-serif;margin-bottom:6px}
+.article-highlight-card .highlight-card-visual .mt-banner-sub{font-size:.8rem;color:#626b7f;font-family:'Inter',sans-serif}
+.article-highlight-card .highlight-card-body{padding:22px 26px;background:var(--surface);border-top:1px solid var(--line);text-align:center}
+.article-highlight-card .highlight-card-body p{margin:0;color:var(--muted);font-size:.92rem;line-height:1.6}
+.article-highlight-card .highlight-card-body strong{color:var(--text)}
+.article-highlight-card:first-of-type{border-top-left-radius:var(--radius-lg);border-top-right-radius:var(--radius-lg)}
+.article-highlight-card:last-of-type{border-bottom-left-radius:var(--radius-lg);border-bottom-right-radius:var(--radius-lg)}
 
 /* Article Image / Figure */
 .article-image{margin:30px 0;border-radius:var(--radius-lg);overflow:hidden;border:1px solid var(--line);box-shadow:var(--shadow-soft)}
