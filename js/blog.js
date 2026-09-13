@@ -228,35 +228,35 @@ const temasContenido = {
     `
   },
   'consultas': {
-    titulo: 'Consultas y Contacto',
+    titulo: 'Asesorías para tu Proyecto',
     contenido: `
-      <h3>1. Canal de comunicación</h3>
-      <p>El canal de contacto directo a través de WhatsApp permite recibir consultas específicas sobre metodología de la investigación, recursos educativos y contenido disponible.</p>
+      <h3>1. Acompañamiento metodológico</h3>
+      <p>El canal de WhatsApp está disponible para coordinar asesorías personalizadas en proyectos de investigación. Revisaremos tu caso y definiremos el tipo de apoyo que necesitas para avanzar con mayor claridad y rigor.</p>
       <blockquote>
         "La educación es el arma más poderosa que puedes usar para cambiar el mundo."
         <cite>— Nelson Mandela, Líder sudafricano</cite>
       </blockquote>
 
-      <h3>2. Temas de consulta</h3>
+      <h3>2. ¿En qué puedo ayudarte?</h3>
       <ul>
-        <li>Formulación de problemas de investigación</li>
-        <li>Diseño metodológico (cuantitativo, cualitativo, mixto)</li>
-        <li>Construcción y validación de instrumentos</li>
-        <li>Normas APA 7ma edición</li>
-        <li>Análisis de datos cualitativos y cuantitativos</li>
-        <li>Estructura de tesis y trabajos de investigación</li>
+        <li>Planteamiento del problema, preguntas y objetivos</li>
+        <li>Diseño metodológico cuantitativo, cualitativo o mixto</li>
+        <li>Operacionalización de variables y construcción de instrumentos</li>
+        <li>Normas APA 7 y redacción académica</li>
+        <li>Organización, análisis y discusión de resultados</li>
+        <li>Revisión de la coherencia de tu proyecto o tesis</li>
       </ul>
 
-      <h3>3. Recursos disponibles</h3>
-      <p>Accede a contenido breve y práctico a través de TikTok, donde se explican conceptos y técnicas de investigación en videos de corta duración.</p>
+      <h3>3. Solicita información</h3>
+      <p>Escríbeme indicando en qué etapa se encuentra tu proyecto y qué aspecto necesitas trabajar. Así podremos orientarte sobre la asesoría más adecuada.</p>
       <blockquote>
         "El conocimiento compartido es conocimiento multiplicado."
         <cite>— Refran popular, aplicado a la educación</cite>
       </blockquote>
       <div class="citation">
-        <p><strong>Contacto:</strong><br>
-        WhatsApp: +51 922 444 639<br>
-        TikTok: @jmleeinvestigaaprende</p>
+         <p><strong>Agenda tu asesoría:</strong><br>
+         WhatsApp: +51 922 444 639<br>
+         Mensaje sugerido: “Hola, quisiera información sobre las asesorías en proyectos de investigación. Necesito apoyo en...”</p>
       </div>
     `
   }

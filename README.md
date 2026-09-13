@@ -16,7 +16,7 @@
 
 - **Sección de Temas**: Contenido académico fundamentado con citas de autores referentes sobre diseño de proyectos, investigación cuantitativa, cualitativa, instrumentos de recolección, normas APA 7 y más.
 - **Sección de Videos**: Contenido destacado del perfil de TikTok `@jmleeinvestigaaprende`.
-- **Contacto directo**: Botón funcional de WhatsApp para consultas sobre metodología.
+- **Asesorías personalizadas**: Botón funcional de WhatsApp para solicitar orientación en proyectos de investigación.
 - **Modo oscuro/claro**: Alternancia de temas con persistencia en localStorage.
 - **Diseño responsivo**: Adaptado para dispositivos móviles, tablets y escritorio.
 - **Animaciones de scroll**: Efectos de aparición al hacer scroll con IntersectionObserver.
@@ -90,7 +90,7 @@ El script usado por la automatizacion esta en `scripts/facebook-blog-sync.js` y 
 
 ### Botón de WhatsApp
 - Número: **+51 922 444 639**
-- Mensaje predeterminado: "Hola, quisiera recibir información sobre los contenidos y recursos de metodología de la investigación"
+- Mensaje predeterminado: "Hola, quisiera información sobre las asesorías en proyectos de investigación. Necesito apoyo en..."
 - Botón flotante visible en todas las páginas
 
 ---
