@@ -1,13 +1,13 @@
 :root{
   --bg:#f6f8fc;--bg-2:#eef3f8;--surface:rgba(255,255,255,.86);--surface-solid:#fff;--surface-soft:#f0f4f9;
-  --text:#12172a;--muted:#626b7f;--line:rgba(18,28,58,.10);--cyan:#38b9c9;--violet:#756fd0;
-  --cyan-soft:rgba(56,185,201,.12);--violet-soft:rgba(117,111,208,.12);--shadow:0 24px 70px rgba(31,43,82,.13);
+  --text:#12172a;--muted:#626b7f;--line:rgba(18,28,58,.10);--cyan:#1f8fe0;--violet:#3d6ec8;
+  --cyan-soft:rgba(31,143,224,.12);--violet-soft:rgba(61,110,200,.12);--shadow:0 24px 70px rgba(31,43,82,.13);
   --shadow-soft:0 14px 34px rgba(31,43,82,.08);--max:1180px;--radius-xl:32px;--radius-lg:22px;--radius-md:16px;
 }
 html[data-theme="dark"]{
-  --bg:#0d1020;--bg-2:#13172a;--surface:rgba(22,27,49,.82);--surface-solid:#171c32;--surface-soft:#1c223b;
-  --text:#f5f7ff;--muted:#bcc4db;--line:rgba(235,240,255,.10);--cyan:#5bcbd8;--violet:#958be4;
-  --cyan-soft:rgba(91,203,216,.12);--violet-soft:rgba(149,139,228,.12);--shadow:0 26px 70px rgba(0,0,0,.35);--shadow-soft:0 14px 34px rgba(0,0,0,.24);
+  --bg:#070d18;--bg-2:#0d142a;--surface:rgba(22,27,49,.82);--surface-solid:#171c32;--surface-soft:#1c223b;
+  --text:#f5f7ff;--muted:#bcc4db;--line:rgba(235,240,255,.10);--cyan:#4eb4ff;--violet:#6d94e4;
+  --cyan-soft:rgba(78,180,255,.12);--violet-soft:rgba(109,148,228,.12);--shadow:0 26px 70px rgba(0,0,0,.35);--shadow-soft:0 14px 34px rgba(0,0,0,.24);
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -44,7 +44,7 @@ section{scroll-margin-top:96px}
 
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:50px;padding:0 20px;border-radius:16px;border:1px solid transparent;font-weight:850;font-size:.92rem;cursor:pointer;transition:.2s transform,.2s box-shadow,.2s border-color}
 .btn:hover{transform:translateY(-2px)}
-.btn-primary{color:#fff;background:linear-gradient(135deg,#31b5c5,#736dcc);box-shadow:0 14px 32px rgba(72,104,190,.24)}
+.btn-primary{color:#fff;background:linear-gradient(135deg,#1f8fe0,#3d6ec8);box-shadow:0 14px 32px rgba(31,143,224,.24)}
 .btn-secondary{background:var(--surface);border-color:var(--line);color:var(--text)}
 .btn-link{min-height:auto;padding:0;border-radius:0}
 .arrow{width:18px;height:18px}
