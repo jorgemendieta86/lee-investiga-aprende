@@ -1,3 +1,28 @@
+// ===== Instagram links =====
+const instagramUrl = 'https://www.instagram.com/jmleeinvestigaprende/';
+document.querySelectorAll('.nav-actions').forEach(function(actions) {
+  if (actions.querySelector('a[href="' + instagramUrl + '"]')) return;
+  const link = document.createElement('a');
+  link.className = 'icon-btn';
+  link.href = instagramUrl;
+  link.target = '_blank';
+  link.rel = 'noopener';
+  link.setAttribute('aria-label', 'Síguenos en Instagram');
+  link.title = 'Instagram';
+  link.innerHTML = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>';
+  actions.insertBefore(link, actions.querySelector('#themeToggle'));
+});
+
+document.querySelectorAll('.footer-links').forEach(function(links) {
+  if (links.querySelector('a[href="' + instagramUrl + '"]')) return;
+  const link = document.createElement('a');
+  link.href = instagramUrl;
+  link.target = '_blank';
+  link.rel = 'noopener';
+  link.textContent = 'Instagram';
+  links.appendChild(link);
+});
+
 // ===== TikTok lazy-load =====
 let tiktokScriptLoaded = false;
 function loadTiktokScript(cb) {

@@ -146,7 +146,7 @@ footer{padding:28px 0 34px;border-top:1px solid var(--line)}
 
 @media(max-width:1040px){
   .nav-links{position:absolute;left:20px;right:20px;top:86px;display:none;flex-direction:column;align-items:stretch;padding:12px;background:var(--surface-solid);box-shadow:var(--shadow);border-radius:20px;z-index:50}.nav-links.open{display:flex}.nav-links a{padding:12px 14px}.menu-btn{display:grid}
-  .nav-actions a.icon-btn[href*="tiktok"],.nav-actions a.icon-btn[href*="facebook"]{display:none}
+  .nav-actions a.icon-btn[href*="tiktok"],.nav-actions a.icon-btn[href*="facebook"],.nav-actions a.icon-btn[href*="instagram"]{display:none}
   .hero-grid{grid-template-columns:1fr;gap:40px}.hero-copy{text-align:center}.hero-copy>p{margin-inline:auto}.hero-actions,.hero-tags{justify-content:center}.hero-visual{min-height:520px}.section-head{align-items:flex-start;flex-direction:column}.contact-card{grid-template-columns:1fr}.contact-actions{max-width:360px;min-width:0}
   .video-embed-grid{grid-template-columns:repeat(2,1fr)}
 }
