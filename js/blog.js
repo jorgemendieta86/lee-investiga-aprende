@@ -265,10 +265,81 @@ const temasContenido = {
 // ===== Modal functionality =====
 const modalOverlay = document.getElementById('modalOverlay');
 const modalTitle = document.getElementById('modalTitle');
+const modalKicker = document.getElementById('modalKicker');
 const modalContent = document.getElementById('modalContent');
 const modalClose = document.getElementById('modalClose');
 
-if (modalOverlay && modalTitle && modalContent && modalClose) {
+const temasDestacados = {
+  'diseno-proyecto': {
+    etiqueta: 'RUTA DE INVESTIGACIÓN',
+    puntos: [
+      ['Delimita el problema', 'Define qué ocurre, a quién afecta y en qué contexto estudiarás el fenómeno.'],
+      ['Formula objetivos claros', 'Convierte la pregunta central en resultados concretos que puedas alcanzar.'],
+      ['Alinea cada decisión', 'El método y las técnicas deben responder al objetivo y ser viables y éticos.']
+    ],
+    clave: 'Si problema, objetivos y método no encajan, el proyecto pierde dirección.',
+    accion: 'Explorar la formulación del problema',
+    enlace: 'blog/formulacion-problema.html'
+  },
+  cuantitativo: {
+    etiqueta: 'ENFOQUE CUANTITATIVO',
+    puntos: [
+      ['Define qué medir', 'Expresa las variables con indicadores observables y relevantes para tu pregunta.'],
+      ['Planifica la medición', 'Elige una muestra, un instrumento y procedimientos consistentes para recoger datos.'],
+      ['Analiza para responder', 'Selecciona análisis estadísticos acordes con tus objetivos y el tipo de datos.']
+    ],
+    clave: 'Los números aportan evidencia cuando la medición representa bien el fenómeno.',
+    accion: 'Ver una guía sobre escalas de medición',
+    enlace: 'blog/escala-likert.html'
+  },
+  cualitativo: {
+    etiqueta: 'ENFOQUE CUALITATIVO',
+    puntos: [
+      ['Comprende experiencias', 'Explora cómo las personas interpretan un fenómeno en su contexto.'],
+      ['Elige casos con sentido', 'Selecciona participantes o situaciones que aporten información pertinente y profunda.'],
+      ['Interpreta con rigor', 'Organiza testimonios y observaciones en categorías, patrones y significados.']
+    ],
+    clave: 'La profundidad y la coherencia del análisis importan más que acumular datos sin propósito.',
+    accion: 'Comparar los enfoques de investigación',
+    enlace: 'blog/enfoques-investigacion.html'
+  },
+  instrumentos: {
+    etiqueta: 'RECOLECCIÓN DE DATOS',
+    puntos: [
+      ['Escoge la técnica', 'Encuestas, entrevistas y observaciones responden a necesidades distintas.'],
+      ['Redacta con precisión', 'Cada pregunta debe ser clara, pertinente y enfocada en una sola idea.'],
+      ['Revisa antes de aplicar', 'Valida el contenido y realiza una prueba piloto para detectar problemas.']
+    ],
+    clave: 'Un instrumento útil recoge evidencia alineada con tus objetivos; no los reemplaza.',
+    accion: 'Revisar una guía para diseñar escalas',
+    enlace: 'blog/escala-likert.html'
+  },
+  apa7: {
+    etiqueta: 'ESCRITURA ACADÉMICA',
+    puntos: [
+      ['Atribuye las ideas', 'Cita a las fuentes cada vez que uses sus aportes, incluso al parafrasear.'],
+      ['Completa las referencias', 'Incluye los datos necesarios para que cada fuente pueda localizarse.'],
+      ['Mantén consistencia', 'Comprueba que toda cita tenga su referencia y que el formato sea uniforme.']
+    ],
+    clave: 'Cita y referencia forman un par: cada fuente mencionada debe aparecer en la lista final.',
+    accion: 'Abrir la guía práctica de APA 7',
+    enlace: 'blog/como-usar-apa-7.html'
+  },
+  consultas: {
+    etiqueta: 'ASESORÍA PERSONALIZADA',
+    puntos: [
+      ['Ubica el desafío', 'Identifica qué decisión metodológica o etapa está frenando tu avance.'],
+      ['Revisa opciones', 'Recibe orientación para elegir y justificar alternativas coherentes con tu estudio.'],
+      ['Define el siguiente paso', 'Convierte la conversación en tareas concretas para continuar tu proyecto.']
+    ],
+    clave: 'Una asesoría enfocada empieza por entender tu tema, tu avance y la duda principal.',
+    accion: 'Consultar por WhatsApp',
+    enlace: 'https://wa.me/51922444639?text=Hola%2C%20quisiera%20informaci%C3%B3n%20sobre%20las%20asesor%C3%ADas%20en%20proyectos%20de%20investigaci%C3%B3n.',
+    externa: true
+  }
+};
+
+if (modalOverlay && modalTitle && modalKicker && modalContent && modalClose) {
   document.querySelectorAll('.category-card[data-tema]').forEach(card => {
   card.addEventListener('click', (e) => {
     e.preventDefault();
@@ -284,20 +355,81 @@ if (modalOverlay && modalTitle && modalContent && modalClose) {
 
 function openTema(temaKey, triggerEl) {
   const tema = temasContenido[temaKey];
-  if (tema) {
+  const destacado = temasDestacados[temaKey];
+  if (tema && destacado) {
     modalTitle.textContent = tema.titulo;
-    modalContent.innerHTML = tema.contenido;
+    modalContent.replaceChildren();
+
+    const intro = document.createElement('p');
+    intro.className = 'topic-lead';
+    intro.textContent = triggerEl?.dataset.resumen || tema.titulo;
+    modalContent.appendChild(intro);
+
+    const points = document.createElement('div');
+    points.className = 'topic-insights';
+    points.setAttribute('aria-label', 'Puntos clave');
+    destacado.puntos.forEach(([heading, description], index) => {
+      const item = document.createElement('article');
+      item.className = 'topic-insight';
+
+      const number = document.createElement('span');
+      number.className = 'topic-insight-number';
+      number.textContent = String(index + 1).padStart(2, '0');
+
+      const itemHeading = document.createElement('h3');
+      itemHeading.textContent = heading;
+
+      const itemDescription = document.createElement('p');
+      itemDescription.textContent = description;
+
+      item.append(number, itemHeading, itemDescription);
+      points.appendChild(item);
+    });
+    modalContent.appendChild(points);
+
+    const takeaway = document.createElement('aside');
+    takeaway.className = 'topic-takeaway';
+    const takeawayLabel = document.createElement('span');
+    takeawayLabel.className = 'topic-takeaway-label';
+    takeawayLabel.textContent = 'PARA LLEVARLO A LA PRÁCTICA';
+    const takeawayText = document.createElement('p');
+    takeawayText.textContent = destacado.clave;
+    takeaway.append(takeawayLabel, takeawayText);
+    modalContent.appendChild(takeaway);
+
+    const action = document.createElement('a');
+    action.className = 'topic-action';
+    action.href = destacado.enlace;
+    action.textContent = destacado.accion;
+    if (destacado.externa) {
+      action.target = '_blank';
+      action.rel = 'noopener';
+    }
+    const arrow = document.createElement('span');
+    arrow.setAttribute('aria-hidden', 'true');
+    arrow.textContent = '↗';
+    action.appendChild(arrow);
+    modalContent.appendChild(action);
+
+    modalOverlay.dataset.topic = temaKey;
     modalOverlay.classList.add('active');
+    modalOverlay.setAttribute('aria-hidden', 'false');
     document.body.style.overflow = 'hidden';
     modalClose.focus();
-    if (triggerEl) modalOverlay._trigger = triggerEl;
+    if (triggerEl) {
+      modalOverlay._trigger = triggerEl;
+      triggerEl.setAttribute('aria-expanded', 'true');
+    }
   }
 }
 
 function closeModal() {
   modalOverlay.classList.remove('active');
+  modalOverlay.setAttribute('aria-hidden', 'true');
+  delete modalOverlay.dataset.topic;
   document.body.style.overflow = '';
   if (modalOverlay._trigger) {
+    modalOverlay._trigger.setAttribute('aria-expanded', 'false');
     modalOverlay._trigger.focus();
     modalOverlay._trigger = null;
   }
