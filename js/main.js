@@ -1,3 +1,43 @@
+// ===== Mensaje de bienvenida =====
+const welcomeOverlay = document.getElementById('welcomeOverlay');
+const welcomeClose = document.getElementById('welcomeClose');
+if (welcomeOverlay && welcomeClose) {
+  let previouslyFocused = null;
+
+  function closeWelcome() {
+    welcomeOverlay.classList.remove('is-open');
+    welcomeOverlay.setAttribute('aria-hidden', 'true');
+    document.body.classList.remove('welcome-open');
+    if (previouslyFocused && previouslyFocused.isConnected) previouslyFocused.focus();
+  }
+
+  function openWelcome() {
+    previouslyFocused = document.activeElement;
+    welcomeOverlay.classList.add('is-open');
+    welcomeOverlay.setAttribute('aria-hidden', 'false');
+    document.body.classList.add('welcome-open');
+    welcomeClose.focus();
+  }
+
+  welcomeClose.addEventListener('click', closeWelcome);
+  welcomeOverlay.addEventListener('click', function(event) {
+    if (event.target === welcomeOverlay) closeWelcome();
+  });
+  document.addEventListener('keydown', function(event) {
+    if (!welcomeOverlay.classList.contains('is-open')) return;
+    if (event.key === 'Escape') {
+      closeWelcome();
+      return;
+    }
+    if (event.key === 'Tab') {
+      event.preventDefault();
+      welcomeClose.focus();
+    }
+  });
+
+  requestAnimationFrame(openWelcome);
+}
+
 // ===== Instagram links =====
 const instagramUrl = 'https://www.instagram.com/jmleeinvestigaprende/';
 document.querySelectorAll('.nav-actions').forEach(function(actions) {

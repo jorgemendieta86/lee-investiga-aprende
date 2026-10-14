@@ -58,6 +58,7 @@ section{scroll-margin-top:96px}
 .wa-copy{display:flex;flex-direction:column;align-items:flex-start;line-height:1.08}
 .wa-copy small{font-size:.67rem;font-weight:700;opacity:.82;margin-bottom:3px}
 .wa-copy strong{font-size:.92rem;letter-spacing:.01em}
+.hero-actions .wa-copy small:after,#contacto .wa-copy small:after{content:"🇵🇪";display:inline-block;margin-left:5px;font-size:.95em;line-height:1}
 
 .hero{position:relative;padding:84px 0 74px}
 .hero:before{content:"";position:absolute;inset:0;pointer-events:none;background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:66px 66px;mask-image:linear-gradient(to bottom,rgba(0,0,0,.25),transparent 78%);opacity:.22}
@@ -117,6 +118,16 @@ footer{padding:28px 0 34px;border-top:1px solid var(--line)}
 .reveal{opacity:0;transform:translateY(20px);transition:.65s ease}.reveal.visible{opacity:1;transform:none}
 
 /* Modal styles */
+.welcome-open{overflow:hidden}
+.welcome-overlay{position:fixed;inset:0;z-index:120;display:grid;place-items:center;padding:20px;background:rgba(7,12,27,.68);backdrop-filter:blur(7px);opacity:0;visibility:hidden;pointer-events:none;transition:opacity .25s ease,visibility 0s linear .25s}
+.welcome-overlay.is-open{opacity:1;visibility:visible;pointer-events:auto;transition:opacity .25s ease}
+.welcome-card{position:relative;width:min(540px,100%);padding:clamp(30px,6vw,52px);border:1px solid var(--line);border-radius:28px;background:var(--surface-solid);box-shadow:0 28px 90px rgba(0,0,0,.3);text-align:center}
+.welcome-close{position:absolute;top:15px;right:15px;display:grid;place-items:center;width:40px;height:40px;border:1px solid var(--line);border-radius:13px;background:var(--surface);color:var(--text);font-size:1.5rem;line-height:1;cursor:pointer;transition:background .2s,transform .2s}
+.welcome-close:hover{background:var(--surface-soft);transform:rotate(90deg)}
+.welcome-kicker{display:inline-flex;align-items:center;gap:8px;margin-bottom:18px;padding:8px 13px;border:1px solid color-mix(in srgb,var(--cyan) 22%,var(--line));border-radius:999px;background:var(--cyan-soft);color:var(--cyan);font-size:.75rem;font-weight:900;letter-spacing:.06em;text-transform:uppercase}
+.welcome-kicker span{font-size:1.1rem;line-height:1}
+.welcome-card h2{margin:0;color:var(--text);font-size:clamp(1.8rem,6vw,2.65rem);line-height:1.08;letter-spacing:-.045em}
+.welcome-card p{max-width:390px;margin:16px auto 0;color:var(--muted);font-size:1rem;line-height:1.55}
 .modal-overlay{position:fixed;inset:0;z-index:100;background:rgba(0,0,0,.6);backdrop-filter:blur(6px);display:none;align-items:center;justify-content:center;padding:20px;opacity:0;transition:opacity .3s}
 .modal-overlay.active{display:flex;opacity:1}
 .modal{position:relative;width:min(850px,100%);max-height:min(88vh,760px);background:var(--surface-solid);border:1px solid var(--line);border-radius:var(--radius-xl);box-shadow:var(--shadow);overflow:hidden;display:flex;flex-direction:column}
