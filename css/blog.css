@@ -121,6 +121,9 @@
 .article-table td{padding:14px 16px;border-top:1px solid var(--line);color:var(--muted);line-height:1.55;vertical-align:top}
 .article-table tbody tr{background:var(--surface)}
 .article-table tbody tr:nth-child(even){background:var(--surface-soft)}
+.article-table-wrapper--wide{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.article-table.article-table--wide{min-width:1050px;font-size:.78rem}
+.article-table--wide th,.article-table--wide td{padding:12px 13px}
 
 /* Alerts */
 .article-alerts{margin:20px 0 30px;display:flex;flex-direction:column;gap:14px}
